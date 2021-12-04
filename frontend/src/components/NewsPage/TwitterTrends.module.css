@@ -1,0 +1,36 @@
+.twitterBox{
+    color: #F5F8FA;
+    background-color: #14171A;
+    height: 80%;
+    width: 20vw;
+    position: relative;
+    right: 3vw;
+    border: 2px solid;
+    box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+    border-radius: 2%;
+}
+
+.heading{
+    box-shadow: rgba(0, 0, 0, 0.2) 0px 60px 40px -7px;
+    padding-top: 5%;
+    padding-left: 15%;
+}
+
+.heading h1{
+    font-family: 'Ubuntu', sans-serif;
+    margin-top: 0;
+    margin-bottom: 0;
+    display: inline-block;
+    position: relative;
+    top: -4vh;
+    font-size: 2.2rem;
+}
+
+.heading img{
+    width: 30%;
+}
+
+.twitterBox hr{
+    border-bottom: none;
+    height: 0;
+}

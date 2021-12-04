@@ -1,0 +1,45 @@
+/* h4{
+    margin: 0;
+    padding: 0;
+    z-index: 10;
+    color: white;
+    position: absolute;
+    bottom: 0;
+    background-image: linear-gradient(to bottom, rgb(0,0,0,0.8),rgb(0, 0, 0,0.3));
+    background-size: 100% 100%;
+    padding: 1% 5% 20px 5%;
+} */
+
+.card{
+    position: relative;
+    width: 80%;
+    height: 90%;
+    overflow: hidden;
+    margin: auto auto;
+    background: #f2f2f2;
+    border-radius: 20px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
+    cursor: pointer;
+
+}
+
+.card img{
+
+    width: 100%;
+    height: 100%;
+}
+
+
+/* .card:hover > img{
+    width: 120%;
+    opacity: 60%;
+}
+
+.card:hover > h6{
+     
+} */
+
+.main{
+    border-radius: 0;
+}
+

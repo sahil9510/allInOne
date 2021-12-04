@@ -1,0 +1,48 @@
+
+
+.text{
+    font-family: 'Raleway', sans-serif;
+    position: absolute;
+    background-image: linear-gradient(to bottom,rgba(255, 255, 255, 0.9), rgb(255, 255, 255,1));
+    width: 100%;
+    bottom: 0px;
+    padding-left: 2%;
+    overflow: auto;
+    text-align: left;
+    -webkit-transform: translateY(38%);
+    -moz-transform: translateY(38%);
+    -ms-transform: translateY(38%);
+    -o-transform: translateY(38%);
+    transform: translateY(38%);
+    -moz-transition: -moz-transform 0.5s ease;
+    -o-transition: -o-transform 0.5s ease;
+    -webkit-transition: -webkit-transform 0.5s ease;
+    -ms-transition: -ms-transform 0.5s ease;
+    transition: transform 0.5s ease
+}
+
+h6{
+    margin-top: 3%;
+    margin-bottom: 2%;
+    font-size: 2rem;
+}
+
+.main{
+	-webkit-filter: grayscale(0) blur(0);
+	filter: grayscale(0) blur(0);
+	-webkit-transition: .3s ease-in-out;
+	transition: .3s ease-in-out;
+}
+
+.main:hover{
+	-webkit-filter: grayscale(100%) blur(3px);
+	filter: grayscale(100%) blur(3px);
+}
+
+img:hover + .text{
+    -webkit-transform: translateY(0);
+    -moz-transform: translateY(0);
+    -ms-transform: translateY(0);
+    -o-transform: translateY(0);
+    transform: translateY(0)
+}

@@ -1,0 +1,66 @@
+
+.form{
+    display: flex;
+    height: 100%;
+    flex-direction: column;
+    justify-items: center;
+    align-items: center;
+}
+
+.input{
+    width: 60%;
+    margin-top: 20px;
+    height: 5vh;
+    box-sizing: border-box;
+    border: 3px solid #ccc;
+    -webkit-transition: 0.5s;
+    transition: 0.5s;
+    outline: none;
+}
+
+.input:focus{
+    border: 3px solid #555;
+}
+
+label{
+    display: none;
+    color: rgb(207, 126, 126);
+}
+
+.invalid{
+    color:white;
+    background-color: rgb(226, 135, 135);
+}
+
+.invalid::placeholder{
+    color: white;
+}
+
+.invalid + label{
+    display: inline-block;
+}
+
+.button{
+    margin-top: 20px;
+    background-color: white;
+    color: black;
+    height: 6vh;
+    width: 25%;
+    font-size: 1.2rem;
+    border: 2px solid black;
+    cursor: pointer;
+    border-radius: 5%;
+    font-weight: bold;
+    
+}
+
+.button:hover{
+    background-color: black;
+    color: white;
+
+}
+
+.switch{
+    position: relative;
+    top: 100%
+}
