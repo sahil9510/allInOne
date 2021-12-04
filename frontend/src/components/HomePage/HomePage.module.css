@@ -1,0 +1,25 @@
+
+
+.homeScreen{
+    
+    text-align: center;
+    padding: 2% 10%;
+}
+.homeScreen h1{
+    margin: 0;
+    font-size: 4rem;
+}
+
+.row1{
+    margin-top: 5%;
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.row2{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}

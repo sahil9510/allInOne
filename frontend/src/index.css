@@ -1,4 +1,11 @@
 body {
+  background-color: #f3d8c7;
+  background-image: url("/src/bg-10.png"),linear-gradient(0deg, #f3d8c7 0%, #fbfefb 100%);
+  background-size: 100%;
+  background-repeat: no-repeat;
+  background-attachment: fixed;
+  background-position: center;
+  overflow-x: hidden;
   padding: 0;
   margin: 0;
   font-family: 'Roboto', sans-serif;

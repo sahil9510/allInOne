@@ -1,0 +1,8 @@
+
+
+.covidBox{
+    display: flex;
+    height: 35vh;
+    width: 40vw;
+    border: 2px solid black;
+}

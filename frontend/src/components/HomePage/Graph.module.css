@@ -1,0 +1,8 @@
+
+
+.graphBox{
+    display: flex;
+    width: 35vw;
+    height: 40vh;
+    border: 2px solid black;
+}
