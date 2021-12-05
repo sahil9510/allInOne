@@ -1,0 +1,65 @@
+.delete-icon {
+  font-size: 23px;
+  color: #432818;
+}
+.delete-icon:hover {
+  cursor: pointer;
+  font-size: 28px;
+}
+.note {
+  background-color: #e6b8a2;
+  padding: 10px;
+  border-radius: 10px;
+  min-height: 170px;
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  white-space: pre-wrap;
+}
+.note-footer {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+.add {
+  background-color: #c6878d;
+  color: #fff;
+}
+textarea {
+  border: none;
+  resize: none;
+  background-color: #c6878d;
+}
+textarea:focus {
+  outline: none;
+}
+.save {
+  background-color: lightgrey;
+  border: none;
+  border-radius: 15px;
+  padding: 5px 10px;
+  font-size: 16px;
+  color: #ba4f5f;
+}
+.save:hover {
+  background-color: lightblue;
+  cursor: pointer;
+  font-size: 18px;
+}
+.span-note {
+  font-size: 20px;
+  color: #fff;
+}
+::placeholder {
+  font-size: 22px;
+}
+.add ::placeholder{
+  color: #fff;
+  opacity: 0.5;
+}
+small{
+  color: #fff;
+}
+.add textarea{
+  color: #fff;
+}

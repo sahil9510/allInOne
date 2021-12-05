@@ -1,0 +1,33 @@
+.main{
+  text-align: center;
+}
+
+.row-main {
+  padding-top: 10px;
+  padding-bottom: 10px;
+}
+.heading {
+  text-align: center;
+  padding-top: 50px;
+  margin-top: 80px;
+}
+.headline {
+  background-color: #d0b8ac;
+  text-align: center;
+  font-weight: 600;
+  font-style: italic;
+  width: 75%;
+}
+Table {
+  background-color: #fdfaf6;
+}
+.flag-img {
+  height: 70px;
+  margin-top: -5px;
+}
+h1 {
+  font-size: 50px;
+}
+h4{
+    font-size: 30px;
+}

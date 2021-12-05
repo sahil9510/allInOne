@@ -11,6 +11,11 @@ body {
   font-family: 'Roboto', sans-serif;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  /* background-color: #fbfefb; */
+  /* background-image: url("./components/keepNotes/images/final-bg.png");
+  background-position:  right top;
+  background-size: 50%;
+  background-repeat: no-repeat; */
 }
 
 code {

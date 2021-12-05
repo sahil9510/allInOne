@@ -1,0 +1,23 @@
+
+.main{
+    max-width: 960px;
+    margin-left: auto;
+    margin-right: auto;
+    padding-left: 15px;
+    padding-right: 15px;
+
+    
+}
+.heading{
+    display: flex;
+    align-items: center;
+    padding: 20px 0 15px 0;
+    font-size: 40px;
+    font-weight: 400;
+    color: #774936;
+}
+.notes-image{
+    width:45px;
+     height:45px;
+     color: #774936;
+}
