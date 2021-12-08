@@ -38,10 +38,9 @@ const NewsPage = () => {
   if(isLoading || news.length===0){
     return <LoadingPage />
   }
-
   return (
     <React.Fragment>
-        <h1 className={styles.header}>Trending News</h1>
+        <h1 className={styles.header}>Trending News In India</h1>
         <div className={styles.actions}>
             <span>News Genre: </span>
             <button onClick={genreHandler} value="">General</button>

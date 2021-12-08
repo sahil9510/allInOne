@@ -1,14 +1,19 @@
-import React, { useState } from "react";
+import React, { useContext, useState } from "react";
 
 import Form from "./Form";
 import styles from "./LoginPage.module.css";
 
-import Modal from '../UI/Modal'
+import Modal from '../UI/Modal';
+import {AuthContext} from '../../context/auth-context';
+
 let errorText;
+
 const LoginPage = () => {
+  const ctx = useContext(AuthContext);
   const [showModal, changeShowModal] = useState(false);
   const [loginMode, setLoginMode] = useState(true);
 
+  console.log(ctx.isLoggedIn);
   const openModal = () => {
     changeShowModal(true);
   };
@@ -17,6 +22,7 @@ const LoginPage = () => {
   };
 
   const onSubmitHandler = async (user) => {
+
     if (loginMode) {
       try {
         const result = await fetch("http://localhost:5000/api/login", {
@@ -31,6 +37,7 @@ const LoginPage = () => {
           console.log(data);
           throw new Error(data.message);
         }
+        ctx.login();
         console.log(data);
       } catch (err) {
         errorText=err.message;
@@ -53,6 +60,7 @@ const LoginPage = () => {
             throw new Error(data.message);
         }
         console.log(data);
+        ctx.login();
       } catch (err) {
         errorText=err.message;
         openModal();

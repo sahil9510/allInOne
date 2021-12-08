@@ -30,9 +30,9 @@
     -o-filter: blur(15px);
     -ms-filter: blur(15px);
     z-index: 999;
-  }
+}
 
-  .navbar { 
+.navbar { 
     color: #9D6B53;
     display: flex;
     margin: 0;
@@ -55,14 +55,18 @@
 }
 
 .navbar a{
+    color: #9D6B53;
     cursor: pointer;
+}
+
+.navbar a:hover{
+    color: inherit;
 }
 
 .navbar h1{
     padding: 0;
     margin: 0;
     font-size: 2rem;
-    margin-top: 2%;
     margin-right: 10%;
 }
 
@@ -74,6 +78,7 @@
 }
 
 .left a{
+    margin-top: 1%;
     padding: 4% 3%;
     height: 100%;
     font-size: 1.1rem;
@@ -118,6 +123,10 @@
 
 .logout{
     margin-left: 3vw;
+    cursor: pointer;
+}
+.logout svg:hover{
+    transform: scale(1.6);
 }
 
 

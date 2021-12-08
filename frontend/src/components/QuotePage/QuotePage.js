@@ -1,4 +1,5 @@
 import React, { useState } from "react";
+import { Link } from "react-router-dom";
 import { SliderData } from "./ImageSlider/SliderData";
 import styles from "./QuotePage.module.css";
 import ImageSlider from "./ImageSlider/ImageSlider";
@@ -32,7 +33,7 @@ const QuotePage = () => {
   return (
     <React.Fragment>
       <h1 className={styles.logo}>Logo</h1>
-      <button className={styles.login}>Login/Register</button>
+      <Link to="/auth"><button className={styles.login}>Login/Register</button></Link>
       <div className={styles.welcome}>
         <h1>
           Welcome to ...
@@ -51,17 +52,19 @@ const QuotePage = () => {
       </div>
       <div className={styles.info}>
         <h2>
-            Covid Tracker
+            {SliderData[currentSlide].title}
         </h2>
-        <p>Know about the Daily cases and everything related to covid news daily in India and its states</p>
+        <p>{SliderData[currentSlide].message}</p>
       </div>
       <div className={styles.promotion}>
         <h1>
           Join Us Now
         </h1>
+        <Link to="auth">
         <button>
           Login / Register
         </button>
+        </Link>
       </div>
     </React.Fragment>
   );

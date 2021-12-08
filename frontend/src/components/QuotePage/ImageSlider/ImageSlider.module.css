@@ -9,7 +9,7 @@
 
 .image{
     position: relative;
-    width: 600px;
+    width: 650px;
     height: 450px;
     border-radius: 10px;
     z-index: 10;
@@ -40,7 +40,7 @@
 
 
 .slide{
-    opacity: 0;
+    opacity: 0.5;
     transition-duration: 1s ease;
 }
 

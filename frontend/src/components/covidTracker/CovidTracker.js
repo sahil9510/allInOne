@@ -42,9 +42,9 @@ const CovidTracker = () => {
   return (
     <div className="main">
       <Row className="row-main">
-        <Col className="col-md-6 heading">
+        <Col className="col-md-8 heading">
           <div>
-            <h1>
+            <h1 className="h1">
               <img
                 src={flag}
                 className="flag-img"
@@ -53,9 +53,9 @@ const CovidTracker = () => {
               Live Covid Tracker
             </h1>
           </div>
-          <h4>As of {date}</h4>
+          <h4 className="h4">As of {date}</h4>
         </Col>
-        <Col className="col-md-6 ">
+        <Col className="col-md-4 ">
           <Map setLoading={setLoading} />
           <div className="headline">Active Cases WorldWide </div>
         </Col>
