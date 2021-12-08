@@ -1,6 +1,9 @@
 import React, { useState } from 'react';
 
 export const AuthContext = React.createContext({
+    token: "",
+    name: "",
+    userId: "",
     isLoggedIn: false,
     login: ()=>{},
     logout: ()=>{}
@@ -9,17 +12,18 @@ export const AuthContext = React.createContext({
 
 const AuthContextProvider = ({children})=>{
     const [isLoggedIn,setIsLoggedIn]=useState(false);
-
+    let name;
     const logoutHandler=()=>{
         setIsLoggedIn(false);
     }
 
-    const loginHandler=()=>{
+    const loginHandler=(userInfo)=>{
+        name=userInfo.name;
         setIsLoggedIn(true);
     }
 
     return (
-        <AuthContext.Provider value={{isLoggedIn: isLoggedIn,login:loginHandler,logout:logoutHandler }}>
+        <AuthContext.Provider value={{name: name,isLoggedIn: isLoggedIn,login:loginHandler,logout:logoutHandler }}>
             {children}
         </AuthContext.Provider>
     )

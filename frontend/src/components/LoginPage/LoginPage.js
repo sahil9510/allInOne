@@ -1,48 +1,3 @@
-<<<<<<< HEAD
-import React, { useState } from 'react';
-
-import Form from './Form';
-import styles from './LoginPage.module.css';
-
-const LoginPage=()=>{
-    const [loginMode,setLoginMode] = useState(true);
-
-    const onSubmitHandler= async(user)=>{
-        if(loginMode){
-            try{
-            const result = await fetch("http://localhost:5000/api/users/login",{
-                method: 'POST',
-                body: JSON.stringify(user),
-                headers: {
-                    'Content-Type': 'application/json'
-                }
-            });
-            if(!result.ok){
-                console.log(result);
-            }
-            const data = await result.json();
-            console.log(data);
-          }catch(err){
-              console.log(err);
-          }
-        }else{
-            try{
-                const result = await fetch("http://localhost:5000/api/users/register",{
-                    method: 'POST',
-                    body: JSON.stringify(user),
-                    headers: {
-                        'Content-Type': 'application/json'
-                    }
-                });
-                if(!result.ok){
-                    console.log(result);
-                }
-                const data = await result.json();
-                console.log(data);
-              }catch(err){
-                  console.log(err);
-              }
-=======
 import React, { useContext, useState } from "react";
 
 import Form from "./Form";
@@ -82,8 +37,8 @@ const LoginPage = () => {
           console.log(data);
           throw new Error(data.message);
         }
-        ctx.login();
         console.log(data);
+        ctx.login(data);
       } catch (err) {
         errorText=err.message;
         openModal();
@@ -103,7 +58,6 @@ const LoginPage = () => {
         if (!result.ok) {
             console.log(data);
             throw new Error(data.message);
->>>>>>> d6c531212533a17afb8dd98daae0cf4f53ed573f
         }
         console.log(data);
         ctx.login();

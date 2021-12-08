@@ -1,6 +1,7 @@
 
 .covidBox{
-    border: 2px solid black;
+    background-color: rgb(255, 255, 255,0.8);
+    border-radius: 10px;
     height: 47vh;
     width: 40vw;
     padding-bottom: 10px;
