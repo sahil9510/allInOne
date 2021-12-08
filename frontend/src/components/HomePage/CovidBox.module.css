@@ -1,8 +1,24 @@
 
-
 .covidBox{
-    display: flex;
-    height: 35vh;
-    width: 40vw;
     border: 2px solid black;
+    height: 47vh;
+    width: 40vw;
+    padding-bottom: 10px;
+    margin: 30px 40px 30px 40px;
+}
+.data{
+    display: flex;
+    height: 40vh;
+    width: 40vw;
+
+
+}
+h3{
+    color: #676767;
+    display: flex;
+    position: relative;
+    text-align: center;
+    padding-top: 5px;
+    left : 170px;
+    font-size: 25px;
 }
