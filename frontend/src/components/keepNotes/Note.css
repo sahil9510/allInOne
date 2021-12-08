@@ -22,16 +22,25 @@
   justify-content: space-between;
 }
 .add {
+  
   background-color: #c6878d;
   color: #fff;
 }
-textarea {
+.add textarea {
+  font-size: 1.4rem;
+  margin-top: 5%;
+  padding-left: 5%;
   border: none;
   resize: none;
   background-color: #c6878d;
 }
-textarea:focus {
+.add textarea:focus {
+  align-self: flex-start;
+  padding-left: 5%;
+  font-size: 1.4rem;
   outline: none;
+  resize: none;
+  width: 90%;
 }
 .save {
   background-color: lightgrey;
@@ -47,7 +56,11 @@ textarea:focus {
   font-size: 18px;
 }
 .span-note {
-  font-size: 20px;
+  text-align: left;
+  align-self: flex-start;
+  padding-left: 5%;
+  margin-top: 5%;
+  font-size: 1.5rem;
   color: #fff;
 }
 ::placeholder {

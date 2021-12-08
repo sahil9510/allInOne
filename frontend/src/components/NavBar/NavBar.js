@@ -1,42 +1,36 @@
-import React,{useState} from "react";
-import { NavLink } from "react-router-dom";
+import React,{useContext} from "react";
+import { Link } from "react-router-dom";
 import { StickyNote2, AccountCircle, Logout } from "@mui/icons-material";
 import styles from "./NavBar.module.css";
+import { AuthContext } from "../../context/auth-context";
 const NavBar = () => {
-
-  const [isScrolled,setIsScrolled]=useState(false);
-
-//   window.onscroll=()=>{
-//     console.log("Scrolled");
-//     setIsScrolled(window.pageYOffset===0 ? false: true);
-//     return ()=> window.onscroll=null;
-// }
-
+  const ctx=useContext(AuthContext);
+  const logoutHandler=()=>{
+     ctx.logout();
+  }
 
   return (
-    <div className={`${styles.navbar} ${isScrolled ? `${styles.scrolled}` : ""}`} >
-      <div className={`${styles.body} ${isScrolled ? `${styles.scrolled}` : ""}`} />
+    <div className={`${styles.navbar}`} >
+      <div className={`${styles.body}`} />
       <div className={styles.left}>
-        <h1>Logo</h1>
-        <a>Covid Tracker</a>
-        <a>News</a>
-        <a>Map</a>
+        <Link to="/"><h1>Logo</h1></Link>
+        <Link to="/covid-tracker">Covid Tracker</Link>
+        <Link to="/news">News</Link>
+        {/* <a>Map</a> */}
       </div>
       <div className={styles.right}>
         <span>
           <AccountCircle className={styles.profile}/> 
             <p>Sahil Srivastava</p>
         </span>
-        <a>
+        <Link to="/notes">
           <span>
             <StickyNote2 />
           </span>
-        </a>
-        <a>
+        </Link>
           <span className={styles.logout}>
-            <Logout />
+            <Logout onClick={logoutHandler} />
           </span>
-        </a>
       </div>
       
     </div>

@@ -5,11 +5,12 @@
     font-family: 'Raleway', sans-serif;
     padding-left: 10%;
     padding-top: 5%;
-    height: 10%;
+    height: 14%;
     box-shadow: rgba(29,161,242, 0.1) 0px -50px 36px -28px inset;
-        /* border-bottom: 1px solid white; */
+    /* border-bottom: 1px solid white; */
 }
 
 .trend h5{
+    color: white;
     margin: 0;
 }

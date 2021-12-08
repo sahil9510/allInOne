@@ -64,3 +64,10 @@ label{
     position: relative;
     top: 100%
 }
+
+.button:disabled{
+    cursor:auto;
+    border: 1px solid #999999;
+    background-color: #cccccc;
+    color: #666666;
+}

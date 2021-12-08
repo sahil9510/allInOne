@@ -1,5 +1,5 @@
 .twitterBox{
-    color: #F5F8FA;
+    color: #F5F8FA !important;
     background-color: #14171A;
     height: 80%;
     width: 20vw;
@@ -17,12 +17,13 @@
 }
 
 .heading h1{
+    color: white;
     font-family: 'Ubuntu', sans-serif;
     margin-top: 0;
     margin-bottom: 0;
     display: inline-block;
     position: relative;
-    top: -4vh;
+    top: 12px;
     font-size: 2.2rem;
 }
 

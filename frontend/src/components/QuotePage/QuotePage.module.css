@@ -1,0 +1,98 @@
+/* .page{
+    height: 100vh;
+    padding-bottom: 10vh;
+} */
+
+.logo{
+    margin: 0;
+    display: inline-block;
+    position: relative;
+    top: 8%;
+    left: 5%;
+    font-size: 4rem;
+}
+
+.login{
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    border: none;
+    background-color: red;
+    color: white;
+    width: 15%;
+    height:50px;
+    font-size: 1.5rem;
+    display: inline-block;
+    position: relative;
+    top: 8%;
+    left: 70vw;
+    border-radius: 10%;
+}
+
+.welcome{
+    text-align: center;
+    margin-top: 6%;
+}
+
+.welcome h1{
+    font-size: 4rem;
+}
+
+.login:hover{
+    border: 2px red solid;
+    color: red;
+    background-color: rgb(255, 0, 0,0);
+}
+
+
+.box{
+    background-color: white;
+    height: 60%;
+    width: 40%;
+    margin: 10% 30%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.info{
+    margin-top: 20vh;
+    text-align: center;
+
+}
+
+.info h2{
+    font-size: 3rem;
+}
+.info p{
+    font-size: 1.3rem;
+    padding: 0 10%;
+}
+
+.promotion{
+    text-align: center;
+    background-color: white;
+    width: 40%;
+    margin: 5% 30%;
+    margin-bottom: 100%;
+    padding: 3% 4%;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+
+.promotion button{
+    margin: 5%;
+    padding: 2% 5%;
+    background-color: red;
+    color: white;
+    cursor: pointer;
+    border: 2px solid red;
+    font-size: 1.4rem;
+    border-radius: 10px;
+
+}
+
+.promotion button:hover{
+    background-origin: 2px solid red;
+    background-color: rgb(255, 255, 255,0);
+    color: red;
+    font-size: 1.5rem;
+}

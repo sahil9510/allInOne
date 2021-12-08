@@ -36,7 +36,7 @@ const Map = ({setLoading}) => {
   });
 
   return (
-    <div style={{height: '50vh', width: '75%'}}>
+    <div style={{height: '50vh', width: '150%'}}>
       <GoogleMapReact
         bootstrapURLKeys={{key: `${process.env.REACT_APP_MAP_API_KEY}`}}
         defaultCenter={{

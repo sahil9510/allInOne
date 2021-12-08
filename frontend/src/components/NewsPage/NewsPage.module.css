@@ -1,4 +1,7 @@
 .header{
+    font-family: 'Libre Baskerville', serif;
+    margin-top: 5%;
+    padding: 2% 5%;
     text-align: center;
     font-size: 4rem;
 }
@@ -9,20 +12,20 @@
 }
 
 .actions button{
-    background-color: white;
-    border: 1px solid  red;
+    background-color: inherit;
+    border: 1px solid  #9D6B53;
     margin: 5px;
     padding: 10px;
     cursor: pointer;
-    color: red;
+    color: #9D6B53;
     font-weight: bold;
     border-radius: 10%;
 
 }
 
 .actions button:hover{
-    background-color: red;
-    color:white;
+    background-color: #9D6B53;
+    color: white;
     border: none;
 }
 

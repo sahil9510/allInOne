@@ -25,8 +25,8 @@ const AddNote = ({addNoteHandler}) => {
   return (
     <div className="note add">
       <textarea
-        rows="8"
-        cols="10"
+        rows="6"
+        // cols="10"
         placeholder="Add a note..."
         value={noteText}
         onChange={changeHandler}
