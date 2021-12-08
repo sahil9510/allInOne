@@ -1,7 +1,9 @@
 import React, {useState} from 'react';
 import './Note.css';
+import { useHttpClient } from '../../hooks/http-hook';
 
 const AddNote = ({addNoteHandler}) => {
+  const {isLoading, error,sendRequest, clearError }= useHttpClient();
   const [noteText, setNoteText] = useState('');
   const characterLimit =200;
 
@@ -17,6 +19,7 @@ const AddNote = ({addNoteHandler}) => {
       addNoteHandler(noteText);
       setNoteText('');
     }
+    // sendRequest('http://localhost:5000/api/')
   };
 
   return (

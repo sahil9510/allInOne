@@ -2,6 +2,7 @@ require('dotenv').config();
 const express = require("express");
 const mongoose = require("mongoose");
 const userRouter = require("./routes/user-routes");
+const notesRouter = require("./routes/notes-routes");
 const newsRouter = require("./routes/news-routes")
 
 const app = express();
@@ -15,8 +16,9 @@ app.use((req, res, next) => {
   next();
 });
 
-app.use("/api/",userRouter);
+app.use("/api/users",userRouter);
 app.use("/api/",newsRouter);
+app.use("/api/notes",notesRouter)
 
 app.use((error, req, res, next) => {
   if (res.headerSent) {

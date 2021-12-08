@@ -28,7 +28,8 @@ const register=async(req,res,next)=>{
     const createdUser = new User({
         name: name,
         email: email,
-        password: hashedPassword
+        password: hashedPassword,
+        notes: []
     });
     let result;
     try{

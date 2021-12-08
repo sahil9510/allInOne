@@ -24,7 +24,7 @@ const CovidTracker = () => {
 
   const loadData = async () => {
     setLoading(true);
-    const res = await axios.get('https://data.covid19india.org/data.json');
+    const res = await axios.get(`${process.env.REACT_APP_COVID_DATA_API_KEY}`);
     setTotalCases(res.data.statewise.slice(0, 1));
     const totalStateCount = res.data.statewise.slice(1);
     setTotalStateWiseCount(totalStateCount);

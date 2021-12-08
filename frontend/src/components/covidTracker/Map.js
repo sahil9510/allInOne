@@ -12,7 +12,7 @@ const Map = ({setLoading}) => {
 
   const mapData = async () => {
     setLoading(true);
-    const response = await axios.get('https://corona.lmao.ninja/v2/countries');
+    const response = await axios.get(`${process.env.REACT_APP_COVID_WORLD_DATA_API_KEY}`);
     setResults(response.data.slice(1));
     setLoading(false);
   };
@@ -38,7 +38,7 @@ const Map = ({setLoading}) => {
   return (
     <div style={{height: '50vh', width: '75%'}}>
       <GoogleMapReact
-        bootstrapURLKeys={{key: 'AIzaSyDGgx_8WJqJVqKmr-0VP233ZiNxWeNM8bA'}}
+        bootstrapURLKeys={{key: `${process.env.REACT_APP_MAP_API_KEY}`}}
         defaultCenter={{
           lat: 20,
           lng: 77,

@@ -9,7 +9,7 @@ const LoginPage=()=>{
     const onSubmitHandler= async(user)=>{
         if(loginMode){
             try{
-            const result = await fetch("http://localhost:5000/api/login",{
+            const result = await fetch("http://localhost:5000/api/users/login",{
                 method: 'POST',
                 body: JSON.stringify(user),
                 headers: {
@@ -26,7 +26,7 @@ const LoginPage=()=>{
           }
         }else{
             try{
-                const result = await fetch("http://localhost:5000/api/register",{
+                const result = await fetch("http://localhost:5000/api/users/register",{
                     method: 'POST',
                     body: JSON.stringify(user),
                     headers: {
