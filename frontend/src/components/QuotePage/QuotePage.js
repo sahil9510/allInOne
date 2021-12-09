@@ -35,11 +35,11 @@ const QuotePage = () => {
 
   return (
     <React.Fragment>
-      <h1 className={styles.logo}>Logo</h1>
+      <img src='logo-big.png' className={styles.logo} />
       <Link to="/auth"><button className={styles.login}>Login/Register</button></Link>
       <div className={styles.welcome}>
         <h1>
-          Welcome to ...
+          Welcome to <em>saang</em>
         </h1>
         <h4>
           A personalised website according to all your needs. 

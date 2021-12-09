@@ -63,22 +63,38 @@
     color: inherit;
 }
 
-.navbar h1{
+a.logo{
+    margin: 0;
+}
+
+.homeLink{
+    margin: 0 !important;
+    padding: 0 !important;
+    width: 100px;
+    padding-bottom: 10px !important;
+    margin-right: 10px;
+}
+
+.homeLink:hover{
+    background-color: inherit !important;
+}
+
+.logo{
+    width: 100%;
     padding: 0;
     margin: 0;
-    font-size: 2rem;
-    margin-right: 10%;
 }
+
 
 .left{
 
-    margin-left: 6%;
+    margin-left: 8%;
     display: flex;
     width: 40%;
 }
 
 .left a{
-    margin-top: 1%;
+    margin-top: 2%;
     padding: 4% 3%;
     height: 100%;
     font-size: 1.1rem;

@@ -5,11 +5,10 @@
 
 .logo{
     margin: 0;
-    display: inline-block;
     position: relative;
     top: 8%;
     left: 5%;
-    font-size: 4rem;
+    width: 15%;
 }
 
 .login{
@@ -24,13 +23,13 @@
     display: inline-block;
     position: relative;
     top: 8%;
-    left: 70vw;
+    left: 60vw;
     border-radius: 10%;
 }
 
 .welcome{
     text-align: center;
-    margin-top: 6%;
+    margin-top: 5%;
 }
 
 .welcome h1{

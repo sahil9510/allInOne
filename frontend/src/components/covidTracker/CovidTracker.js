@@ -6,6 +6,7 @@ import TableComponent from './Table';
 import {Col, Row} from 'antd';
 import Map from './Map';
 import './CovidTracker.css';
+import {MasksSharp} from '@mui/icons-material';
 
 const CovidTracker = () => {
   let today = new Date();
@@ -39,7 +40,8 @@ const CovidTracker = () => {
     setTotalStateWiseCount(filteredData);
   };
 
-  return (
+  return (<>
+    {/* <MasksSharp className="mask"/> */}
     <div className="main">
       <Row className="row-main">
         <Col className="col-md-8 heading">
@@ -70,6 +72,7 @@ const CovidTracker = () => {
         stateSearch={stateSearch}
       />
     </div>
+    </>
   );
 };
 
