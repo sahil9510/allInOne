@@ -1,7 +1,11 @@
 
 
 .homeScreen{
-    
+    margin-top: 5%;
+    background-image:url('orna.png') ;
+    background-repeat: no-repeat;
+    background-size: 30%;
+    background-position: 20% 90%;
     text-align: center;
     padding: 2% 10%;
 }

@@ -21,7 +21,7 @@ const NavBar = () => {
       <div className={styles.right}>
         <span>
           <AccountCircle className={styles.profile}/> 
-            <p>Sahil Srivastava</p>
+            <p>{ctx.name}</p>
         </span>
         <Link to="/notes">
           <span>

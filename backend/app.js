@@ -24,8 +24,9 @@ app.use((error, req, res, next) => {
   if (res.headerSent) {
     return next(error);
   }
+  console.log("Error");
   res.status(error.code || 500);
-  res.json({ message: error.message } || "ERROR");
+  res.json({ message: error.message || "ERROR"});
 });
 
 mongoose.connect(process.env.MONGO_URL, (err) => {

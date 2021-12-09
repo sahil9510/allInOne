@@ -37,8 +37,8 @@ const LoginPage = () => {
           console.log(data);
           throw new Error(data.message);
         }
-        ctx.login();
         console.log(data);
+        ctx.login(data);
       } catch (err) {
         errorText=err.message;
         openModal();

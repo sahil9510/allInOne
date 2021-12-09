@@ -15,7 +15,10 @@ const QuotePage = () => {
       return current + 1;
     });
   };
-
+  
+  // setTimeout(
+  //   nextSlide()
+  //   ,1000);
   const prevSlide = () => {
     setCurrentSlide((current) => {
       if (current === 0) {
