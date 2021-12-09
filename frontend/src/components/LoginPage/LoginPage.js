@@ -60,7 +60,7 @@ const LoginPage = () => {
             throw new Error(data.message);
         }
         console.log(data);
-        ctx.login();
+        ctx.login(data);
       } catch (err) {
         errorText=err.message;
         openModal();

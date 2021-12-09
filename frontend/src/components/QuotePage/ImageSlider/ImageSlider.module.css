@@ -1,5 +1,5 @@
 .slider{
-    margin-top: 25vh;
+    margin-top: 20vh;
     position: relative;
     height: 50vh;
     display: flex;
@@ -55,7 +55,7 @@
     z-index: -1;
     opacity: 0.5;
     position: absolute;
-    top: 58vh;
+    top: 68vh;
     transform: scale(0.8);
 }
 
@@ -63,7 +63,7 @@
     z-index: -1;
     opacity: 0.5;
     position: absolute;
-    top: 58vh;
+    top: 68vh;
     transform: scale(0.8);
     right: 0vw;
 }

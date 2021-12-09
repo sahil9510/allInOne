@@ -13,7 +13,7 @@ const NavBar = () => {
     <div className={`${styles.navbar}`} >
       <div className={`${styles.body}`} />
       <div className={styles.left}>
-        <Link to="/"><h1>Logo</h1></Link>
+        <Link className={styles.homeLink} to="/"><img src="logo-big.png" alt="logo" className={styles.logo}/></Link>
         <Link to="/covid-tracker">Covid Tracker</Link>
         <Link to="/news">News</Link>
         {/* <a>Map</a> */}
