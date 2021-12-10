@@ -16,6 +16,7 @@ const NavBar = () => {
         <Link className={styles.homeLink} to="/"><img src="logo-big.png" alt="logo" className={styles.logo}/></Link>
         <Link to="/covid-tracker">Covid Tracker</Link>
         <Link to="/news">News</Link>
+        <Link to="/paraphrasing">Paraphrasing</Link>
         {/* <a>Map</a> */}
       </div>
       <div className={styles.right}>

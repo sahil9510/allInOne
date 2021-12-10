@@ -47,6 +47,7 @@
     background:rgba(255, 237, 216,0.9);
     border-bottom: 1px solid rgba(225,225,225,0.5);
     z-index: 1000;
+    animation: appearIn 1s ease-out both;
   }
 
 
@@ -146,3 +147,10 @@ a.logo{
 }
 
 
+@keyframes appearIn{
+    from{
+        transform: translateY(-10vh);
+    }to{
+        transform: translateY(0);
+    }
+}

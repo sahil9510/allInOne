@@ -6,7 +6,7 @@ import './Card.css';
 
 const CardComponent = ({totalCases}) => {
   return (
-    <div>
+    <div data-aos="zoom-in-right" data-aos-duration="2000">
       {totalCases.map((item, index) => (
         <div className="row">
           <div className="col-lg-12">
@@ -17,7 +17,7 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Confirmed"
                     bordered={false}
-                    style={{width: 360, height: 215}}
+                    style={{width: 300, height: 215}}
                   >
                     <img
                       src={confirmed}
@@ -33,7 +33,7 @@ const CardComponent = ({totalCases}) => {
                       duration={2.75}
                       separator=","
                     />
-                    <h2 className="text-warning">{item.confirmed}</h2>
+                    <h2 className="text text-warning">{item.confirmed}</h2>
                   </Card>
                 </Col>
 
@@ -42,14 +42,14 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Active"
                     bordered={false}
-                    style={{width: 360, height: 215}}
+                    style={{width: 300, height: 215}}
                   >
                     <span className="imageIcons">
                       <i className="fab fa-creative-commons-sampling fa-3x" />
                     </span>
                     <br />
 
-                    <h2 className="text-info">{item.active}</h2>
+                    <h2 className="text text-info">{item.active}</h2>
                   </Card>
                 </Col>
 
@@ -58,7 +58,7 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Recovered"
                     bordered={false}
-                    style={{width: 360, height: 215}}
+                    style={{width: 300, height: 215}}
                   >
                     <span style={{color: 'green'}}>
                       <i className="fab fa-creative-commons-sampling fa-3x" />
@@ -72,7 +72,7 @@ const CardComponent = ({totalCases}) => {
                       duration={2.75}
                       separator=","
                     />
-                    <h2 className="text-success">{item.recovered}</h2>
+                    <h2 className="text text-success">{item.recovered}</h2>
                   </Card>
                 </Col>
 
@@ -81,7 +81,7 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Death"
                     bordered={false}
-                    style={{width: 360, height: 215}}
+                    style={{width: 300, height: 215}}
                   >
                     <span>
                       <i className="fas fa-skull-crossbones fa-3x" />
@@ -95,7 +95,7 @@ const CardComponent = ({totalCases}) => {
                       duration={2.75}
                       separator=","
                     />
-                    <h2 className="text-dark">{item.deaths}</h2>
+                    <h2 className="text text-dark">{item.deaths}</h2>
                   </Card>
                 </Col>
               </Row>

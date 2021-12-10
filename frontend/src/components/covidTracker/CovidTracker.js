@@ -6,7 +6,6 @@ import TableComponent from './Table';
 import {Col, Row} from 'antd';
 import Map from './Map';
 import './CovidTracker.css';
-import {MasksSharp} from '@mui/icons-material';
 
 const CovidTracker = () => {
   let today = new Date();
@@ -44,7 +43,8 @@ const CovidTracker = () => {
     {/* <MasksSharp className="mask"/> */}
     <div className="main">
       <Row className="row-main">
-        <Col className="col-md-8 heading">
+        <Col data-aos="fade-right"
+      data-aos-duration="2000" className="col-md-6 heading">
           <div>
             <h1 className="h1">
               <img
@@ -54,15 +54,16 @@ const CovidTracker = () => {
               />{'  '}
               Live Covid Tracker
             </h1>
-          </div>
           <h4 className="h4">As of {date}</h4>
+          </div>
         </Col>
-        <Col className="col-md-4 ">
+        <Col  data-aos="fade-left"
+      data-aos-duration="2000" className="col-md-6 ">
           <Map setLoading={setLoading} />
           <div className="headline">Active Cases WorldWide </div>
         </Col>
       </Row>
-      <CardComponent totalCases={totalCases} />
+      <CardComponent  key={Math.floor(Math.random()*100).toLocaleString()} totalCases={totalCases} />
       <TableComponent 
         totalStateWiseCount={totalStateWiseCount}
         stateArrayLength={stateArrayLength}

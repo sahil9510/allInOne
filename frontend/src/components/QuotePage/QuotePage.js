@@ -3,6 +3,7 @@ import { Link } from "react-router-dom";
 import { SliderData } from "./ImageSlider/SliderData";
 import styles from "./QuotePage.module.css";
 import ImageSlider from "./ImageSlider/ImageSlider";
+
 const QuotePage = () => {
   const [currentSlide, setCurrentSlide] = useState(0);
   const length = SliderData.length;
@@ -15,7 +16,7 @@ const QuotePage = () => {
       return current + 1;
     });
   };
-  
+
   // setTimeout(
   //   nextSlide()
   //   ,1000);
@@ -35,15 +36,15 @@ const QuotePage = () => {
 
   return (
     <React.Fragment>
-      <img src='logo-big.png' className={styles.logo} />
-      <Link to="/auth"><button className={styles.login}>Login/Register</button></Link>
+      <img src="logo-big.png" className={styles.logo} alt="logo" />
+      <Link to="/auth">
+        <button className={styles.login}>Login/Register</button>
+      </Link>
       <div className={styles.welcome}>
         <h1>
           Welcome to <em>saang</em>
         </h1>
-        <h4>
-          A personalised website according to all your needs. 
-        </h4>
+        <h4>A personalised website according to all your needs.</h4>
       </div>
       <div>
         <ImageSlider
@@ -54,19 +55,34 @@ const QuotePage = () => {
         />
       </div>
       <div className={styles.info}>
-        <h2>
-            {SliderData[currentSlide].title}
-        </h2>
-        <p>{SliderData[currentSlide].message}</p>
+        {SliderData.map((slide, index) => {
+          return (
+            <div
+              className={`${
+                index === currentSlide
+                  ? `${styles[`desc-active`]}`
+                  : `${styles[`desc`]}`
+              }`}
+              key={index}
+            >
+              {index === currentSlide && (
+                <div>
+                  <h2>{slide.title}</h2>
+                  <p>{slide.message}</p>
+                </div>
+              )}
+            </div>
+          );
+        })}
       </div>
-      <div className={styles.promotion}>
-        <h1>
-          Join Us Now
-        </h1>
+      <div
+        data-aos="fade-up"
+        data-aos-duration="1000"
+        className={styles.promotion}
+      >
+        <h1>Join Us Now</h1>
         <Link to="auth">
-        <button>
-          Login / Register
-        </button>
+          <button>Login / Register</button>
         </Link>
       </div>
     </React.Fragment>

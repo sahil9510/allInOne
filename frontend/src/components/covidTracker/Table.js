@@ -30,10 +30,10 @@ const TableComponent = ({
 
   const itemRender = (current, type, originalElement) => {
     if (type === 'prev') {
-      return <a className="text-primary">Previous</a>;
+      return <button className="nextPrev text-primary">Previous</button>;
     }
     if (type === 'next') {
-      return <a className="text-info">Next</a>;
+      return <button className="nextPrev text-info">Next</button>;
     }
     return originalElement;
   };
@@ -126,7 +126,7 @@ const TableComponent = ({
   };
 
   return (
-    <div>
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="400">
       <Space className="space">
         <Input
           className="inputState"

@@ -8,7 +8,10 @@ import LoginPage from "./components/LoginPage/LoginPage";
 import KeepNotes from "./components/keepNotes/KeepNotes";
 import CovidTracker from "./components/covidTracker/CovidTracker";
 import QuotePage from "./components/QuotePage/QuotePage";
+import ParaphrasingPage from "./components/ParaphrasingPage/ParaphrasingPage";
 import { AuthContext } from "./context/auth-context";
+import AOS from 'aos';
+import 'aos/dist/aos.css';
 
 let logoutTimer;
 function App() {
@@ -20,14 +23,16 @@ function App() {
   const userId = ctx.userId;
 
 
-  const logoutHandler = () => {
+
+
+  const logoutHandler = useCallback(() => {
     ctx.name="";
     ctx.token="";
     ctx.userId="";
     setTokenExpirationDate(null);
     localStorage.removeItem("userData");
     setIsLoggedIn(false);
-  };
+  },[ctx]);
 
   const loginHandler = useCallback((userInfo,expirationDate) => {
     ctx.name = userInfo.name;
@@ -44,10 +49,11 @@ function App() {
       expiration: tokenExpirationDate.toISOString(),
     }));
     setIsLoggedIn(true);
-  },[]);
+  },[ctx]);
 
 
   useEffect(() => {
+    AOS.init()
     const storedData = JSON.parse(localStorage.getItem("userData"));
     console.log(storedData);
     if (storedData && storedData.token && new Date(storedData.expiration) > new Date()) {
@@ -85,6 +91,9 @@ function App() {
           <Route path="/notes">
             <KeepNotes />
           </Route>
+          <Route path='/paraphrasing'>
+            <ParaphrasingPage />
+          </Route>
           <Route path="*">
             <Redirect to="/" />
           </Route>
@@ -108,11 +117,14 @@ function App() {
       </>
     );
   }
+
   console.log(routes);
   console.log(isLoggedIn);
+
   return (
     <AuthContext.Provider
       value={{
+        userId: userId,
         token: token,
         name: name,
         isLoggedIn: isLoggedIn,

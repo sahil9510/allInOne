@@ -29,3 +29,10 @@
     justify-content: center;
     align-items: center;
 }
+
+.row3{
+    margin-top: 5%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
