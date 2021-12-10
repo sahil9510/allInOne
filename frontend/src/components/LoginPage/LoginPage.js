@@ -79,7 +79,7 @@ const LoginPage = () => {
         <h1 className={styles.heading}>{loginMode ? "Sign In" : "Sign Up"}</h1>
         <Form submitHandler={onSubmitHandler} loginMode={loginMode} />
         <button onClick={switchHandler} className={`${styles.switch}`}>
-          Switch
+          {loginMode ? "Sign Up" : "Sign In"}
         </button>
       </div>
     </React.Fragment>

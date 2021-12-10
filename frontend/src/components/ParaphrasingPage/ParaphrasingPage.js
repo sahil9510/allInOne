@@ -4,13 +4,14 @@ import styles from "./ParaphrasingPage.module.css";
 
 let category="Simple";
 const ParaphrasingPage = () => {
-
+    const [checked,setChecked]=useState('Simple');
     const [paraPhrased,setParaphrased]=useState();
     const textRef = useRef();
     
 
   const categoryHandler=(event)=>{
     category=event.target.value;
+    setChecked(category);
     console.log(category);
   }
 
@@ -47,16 +48,16 @@ const ParaphrasingPage = () => {
       <div  className={styles.category}>
         <h6>Phrasing Mode:</h6>
         <div className={styles.point}>
-        <label ><input value="Simple" name="category" type="radio" onChange={categoryHandler} checked/> Simple </label>
+        <label ><input value="Simple" name="category" type="radio" onChange={categoryHandler} checked={checked==='Simple'}/> Simple </label>
         </div> 
         <div className={styles.point}>
-        <label><input value="Advanced" name="category" type="radio" onChange={categoryHandler}/> Advanced</label>
+        <label><input value="Advanced" name="category" type="radio" onChange={categoryHandler} checked={checked==='Advanced'}/> Advanced</label>
         </div>
         <div className={styles.point}>
-        <label><input value="Fluency" name="category" type="radio" onChange={categoryHandler}/> Fluency</label>
+        <label><input value="Fluency" name="category" type="radio" onChange={categoryHandler} checked={checked==='Fluency'}/> Fluency</label>
         </div>
         <div className={styles.point}>
-        <label><input value="Creative" name="category" type="radio" onChange={categoryHandler}/> Creative</label>
+        <label><input value="Creative" name="category" type="radio" onChange={categoryHandler} checked={checked==='Creative'}/> Creative</label>
         </div>
       </div>
       <div data-aos="fade-up" data-aos-duration="1500" className={styles.content}>

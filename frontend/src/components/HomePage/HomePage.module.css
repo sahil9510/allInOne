@@ -16,6 +16,11 @@
     font-size: 4rem;
 }
 
+.welcome{
+    font-size: 5rem !important;
+    font-weight: 600;
+}
+
 .row1{
     margin-top: 5%;
     display: flex;

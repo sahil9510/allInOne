@@ -57,17 +57,17 @@ getFact();
 
   return (
     <div className={styles.homeScreen}>
-        <h1>Welcome</h1>
+        <h1 className={styles.welcome}>Welcome</h1>
       <div className={styles.row1}>
         <FactBox fact={fact} />
         {/* <Graph /> */}
         <CovidBox />
       </div>
       <div className={styles.row2}>
-        <NewsBox news={news[0]} />
+        <NewsBox news={news[10]} />
       </div>
       <div className={styles.row3}>
-        <NewsBox news={news[1]} />
+        <NewsBox news={news[11]} />
       </div>
     </div>
   );

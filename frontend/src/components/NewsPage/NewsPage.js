@@ -54,19 +54,19 @@ const NewsPage = () => {
         </div>
     <div className={styles.panel}>
       <div data-aos="fade-up"   data-aos-delay="800" data-aos-duration="2000" className={styles.mainNews}>
-        <MainPanel title={news[0].title} img={news[0].urlToImage} description={news[0].content}/>
+        <MainPanel title={news[0].title.split('-')[0]} img={news[0].urlToImage} description={news[0].description}/>
       </div>
       <div data-aos="fade-up"   data-aos-delay="1000" data-aos-duration="2000" className={styles.sideNews}>
         <TwitterTrends />
       </div>
       <div data-aos="fade-up"  data-aos-duration="1000" className={`${styles.panelNews1} ${styles.panelNews}`}>
-        <Panel title={news[2].title} img={news[2].urlToImage} description={news[2].content}/>
+        <Panel title={news[2].title} img={news[2].urlToImage} description={news[2].description}/>
       </div>
       <div  data-aos="fade-up"  data-aos-duration="1000" className={`${styles.panelNews2} ${styles.panelNews}`}>
-        <Panel title={news[3].title} img={news[3].urlToImage} description={news[3].content}/>
+        <Panel title={news[3].title} img={news[3].urlToImage} description={news[3].description}/>
       </div>
       <div data-aos="fade-up"  data-aos-duration="1000" className={`${styles.panelNews3} ${styles.panelNews}`}>
-        <Panel title={news[4].title} img={news[4].urlToImage} description={news[4].content}/>
+        <Panel title={news[4].title} img={news[4].urlToImage} description={news[4].description}/>
       </div>
     </div>
     </React.Fragment>

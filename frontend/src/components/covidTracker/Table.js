@@ -126,7 +126,7 @@ const TableComponent = ({
   };
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="400">
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
       <Space className="space">
         <Input
           className="inputState"

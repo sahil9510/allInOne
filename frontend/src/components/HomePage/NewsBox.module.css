@@ -18,8 +18,8 @@
 }
 
 .newsBox img{
-    justify-self:normal;
     width: 120%;
+    justify-self:normal;
     position: relative;
     right: 10%;
 }
