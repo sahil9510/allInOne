@@ -39,7 +39,7 @@ const QuotePage = () => {
       <Link to="/auth"><button className={styles.login}>Login/Register</button></Link>
       <div className={styles.welcome}>
         <h1>
-          Welcome to <em>saang</em>
+          Welcome to <em>sang</em>
         </h1>
         <h4>
           A personalised website according to all your needs. 

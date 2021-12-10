@@ -1,71 +1,68 @@
-import React, {useState, useEffect} from 'react';
+import React, {useState, useEffect, useContext} from 'react';
 import NotesList from './NotesList';
 import './KeepNotes.css';
 import {nanoid} from 'nanoid';
 import SearchBar from './SearchBar';
 import noteImage from './images/pencil.png';
+import {AuthContext} from '../../context/auth-context';
 
 const KeepNotes = () => {
-  const [notes, setNotes] = useState([
-    // {
-    //   id: nanoid(),
-    //   text: 'first note',
-    //   date: '1/12/2021',
-    // },
-    // {
-    //   id: nanoid(),
-    //   text: 'second note',
-    //   date: '2/12/2021',
-    // },
-    // {
-    //   id: nanoid(),
-    //   text: 'third note',
-    //   date: '3/12/2021',
-    // },
-  ]);
+  const [notes, setNotes] = useState([]);
+  const ctx = useContext(AuthContext);
 
-  
-//  ******* to store notes in local storage 
   useEffect(() => {
-    const savedNotes = JSON.parse(
-        localStorage.getItem('react-notes-app-data')
-    );
-
-    if (savedNotes) {
-        setNotes(savedNotes);
-    }
-}, []);
-
-useEffect(() => {
-    localStorage.setItem(
-        'react-notes-app-data',
-        JSON.stringify(notes)
-    );
-}, [notes]);
-// *********************************************
+    const fetchNotes = async () => {
+      try {
+        const responseData = await fetch(
+          `http://localhost:5000/api/notes/user/${ctx.userId}`
+        );
+        const data = await responseData.json();
+        setNotes(data.notes);
+      } catch (err) {
+        console.log(err);
+      }
+    };
+    fetchNotes();
+  });
 
   const addNote = (text) => {
-    const date = new Date();
     const newNote = {
       id: nanoid(),
       text: text,
-      date: date.toLocaleDateString(),
+      date: new Date().getDate() +'-' + new Date().getMonth() + '-' + new Date().getFullYear(),
     };
     const newNotes = [...notes, newNote];
     setNotes(newNotes);
   };
 
-  const deleteNote = (id) => {
-    const newNotes = notes.filter((note) => note.id !== id);
-    setNotes(newNotes);
+  const deleteNote = async (id) => {
+    try {
+      const response = await fetch(
+        `http://localhost:5000/api/notes/user/${ctx.userId}`,
+        {
+          method: 'DELETE',
+          headers: {
+            'Content-Type': 'application/json',
+            Authersation: 'Bearer ' + ctx.token,
+          },
+          body: JSON.stringify({
+            noteId: id,
+          }),
+        }
+      );
+      const data = await response.json();
+      const newNotes = notes.filter((note) => note.id !== id);
+      setNotes(newNotes);
+    } catch (err) {}
   };
 
   const [searchText, setSearchText] = useState('');
 
   return (
-    
     <div className="main">
-    <h1 className="heading">Notes <img src={noteImage} className="notes-image" alt="" /> </h1>
+      <h1 className="heading">
+        Notes <img src={noteImage} className="notes-image" alt="" />{' '}
+      </h1>
       <SearchBar searchHandler={setSearchText} />
       <NotesList
         notes={notes.filter((note) =>
@@ -75,8 +72,6 @@ useEffect(() => {
         deleteHandler={deleteNote}
       />
     </div>
-  
-    
   );
 };
 

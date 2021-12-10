@@ -83,12 +83,14 @@ a.logo{
     width: 100%;
     padding: 0;
     margin: 0;
+    position: relative;
+    left: -30px;
 }
 
 
 .left{
 
-    margin-left: 8%;
+    margin-left: 4%;
     display: flex;
     width: 40%;
 }
@@ -124,8 +126,8 @@ a.logo{
 }
 
 .profile{
-    margin-right: 1vw;
-    margin-top: 2vh;
+    margin-right: 0.7vw;
+    margin-top: 2.5vh;
 }
 .right p{
     display:inline-block;
@@ -144,5 +146,16 @@ a.logo{
 .logout svg:hover{
     transform: scale(1.6);
 }
+.name{
+    font-size: 1.2rem;
+    position: relative;
+    top: 0.1px;
 
+ }
+.sudoku{
+    font-size: 1.1rem;
+}
+.navHead{
+    font-size: 1.1rem;
+}
 

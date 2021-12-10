@@ -1,0 +1,17 @@
+.Grid {
+  display: flex;
+  flex-direction: column;
+  padding: 30px;
+}
+
+
+.sudokuTable {
+  
+  border: 3px solid #774936;
+  border-collapse: collapse;
+  position: relative;
+width: 405px;
+  margin: 0 auto;
+  background-color: #FFE8E8;
+  box-shadow: 7px 7px 40px -6px #F8F1F1;
+}

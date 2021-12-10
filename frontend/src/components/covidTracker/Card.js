@@ -17,7 +17,7 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Confirmed"
                     bordered={false}
-                    style={{width: 360, height: 215}}
+                    style={{width: 310, height: 215}}
                   >
                     <img
                       src={confirmed}
@@ -42,7 +42,7 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Active"
                     bordered={false}
-                    style={{width: 360, height: 215}}
+                    style={{width: 310, height: 215}}
                   >
                     <span className="imageIcons">
                       <i className="fab fa-creative-commons-sampling fa-3x" />
@@ -58,7 +58,7 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Recovered"
                     bordered={false}
-                    style={{width: 360, height: 215}}
+                    style={{width: 310, height: 215}}
                   >
                     <span style={{color: 'green'}}>
                       <i className="fab fa-creative-commons-sampling fa-3x" />
@@ -81,7 +81,7 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Death"
                     bordered={false}
-                    style={{width: 360, height: 215}}
+                    style={{width: 310, height: 215}}
                   >
                     <span>
                       <i className="fas fa-skull-crossbones fa-3x" />

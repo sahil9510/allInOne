@@ -9,6 +9,7 @@ import KeepNotes from "./components/keepNotes/KeepNotes";
 import CovidTracker from "./components/covidTracker/CovidTracker";
 import QuotePage from "./components/QuotePage/QuotePage";
 import { AuthContext } from "./context/auth-context";
+import Game from "./components/Sudoku/screens/Game/Game";
 
 let logoutTimer;
 function App() {
@@ -85,6 +86,9 @@ function App() {
           <Route path="/notes">
             <KeepNotes />
           </Route>
+          <Route path="/sudoku">
+            <Game />
+          </Route>
           <Route path="*">
             <Redirect to="/" />
           </Route>
@@ -115,6 +119,7 @@ function App() {
     <AuthContext.Provider
       value={{
         token: token,
+        userId: userId,
         name: name,
         isLoggedIn: isLoggedIn,
         login: loginHandler,

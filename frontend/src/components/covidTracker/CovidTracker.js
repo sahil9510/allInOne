@@ -6,7 +6,6 @@ import TableComponent from './Table';
 import {Col, Row} from 'antd';
 import Map from './Map';
 import './CovidTracker.css';
-import {MasksSharp} from '@mui/icons-material';
 
 const CovidTracker = () => {
   let today = new Date();

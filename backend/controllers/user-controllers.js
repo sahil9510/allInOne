@@ -24,6 +24,7 @@ const register=async(req,res,next)=>{
         hashedPassword= await bcrypt.hash(password,12);
     }catch(err){
         return next(new HttpError("Something Went Wrong",500));
+       
     }
 
     const createdUser = new User({
@@ -37,6 +38,7 @@ const register=async(req,res,next)=>{
     result = await createdUser.save();
     }catch(err){
         return next(new HttpError("Somethign went wrong",500));
+        
     }
 
     let token;
@@ -44,6 +46,7 @@ const register=async(req,res,next)=>{
         token = jwt.sign({userId: createdUser.id, email: createdUser.email},process.env.JWT_TOKEN,{expiresIn: "1h"});
     }catch(err){
         return next(new HttpError("Something went wrong",500));
+      
     }
     res.status(201).json({name:createdUser.name,userId: createdUser.id,email: createdUser.email,token: token});
 }

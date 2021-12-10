@@ -1,3 +1,7 @@
+/* *{
+  color: #774936;
+} */
+
 body {
   background-color: #f3d8c7;
   background-image: url("/src/bg-10.png"),linear-gradient(0deg, #f3d8c7 0%, #fbfefb 100%);
