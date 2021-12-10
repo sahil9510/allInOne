@@ -77,7 +77,7 @@ const data = [
 
 const CovidBox = () => {
   return (
-    <div className={styles.covidBox}>
+    <div data-aos="fade-left" data-aos-duration="1000" className={styles.covidBox}>
           <h3>Average Daily Cases</h3>
     <div className={styles.data}>
       <ResponsiveContainer width="100%" height="100%">

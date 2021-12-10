@@ -2,10 +2,10 @@
 .covidBox{
     background-color: rgb(255, 255, 255,0.8);
     border-radius: 10px;
-    height: 47vh;
-    width: 40vw;
-    padding-bottom: 10px;
+    width: 42vw;
+    padding: 3% 1%;
     margin: 30px 40px 30px 40px;
+    box-shadow: 0 0 20px 8px #d0d0d0;
 }
 .data{
     display: flex;
@@ -19,7 +19,6 @@ h3{
     display: flex;
     position: relative;
     text-align: center;
-    padding-top: 5px;
-    left : 170px;
-    font-size: 25px;
+    margin-left: 25%;
+    font-size: 2rem;
 }

@@ -6,6 +6,7 @@ import styles from "./NewsPage.module.css";
 import LoadingPage from "../LoadingPage/LoadingPage";
 import TwitterTrends from "./TwitterTrends";
 
+
 const NewsPage = () => {
   const [isLoading,setisLoading]=useState(false);
   const [category,setCategory]=useState("");
@@ -26,9 +27,9 @@ const NewsPage = () => {
       } catch (err) {
         console.log(err);
       }
-      setisLoading(false);
     };
     newsReciever();
+    setisLoading(false);
   }, [category]);
 
   const genreHandler=(event)=>{
@@ -40,7 +41,7 @@ const NewsPage = () => {
   }
   return (
     <React.Fragment>
-        <h1 className={styles.header}>Trending News In India</h1>
+        <h1 data-aos="fade-down" data-aos-duration="1000" className={styles.header}>Trending News In India</h1>
         <div className={styles.actions}>
             <span>News Genre: </span>
             <button onClick={genreHandler} value="">General</button>
@@ -52,19 +53,19 @@ const NewsPage = () => {
             <button onClick={genreHandler} value="technology">Technology</button>
         </div>
     <div className={styles.panel}>
-      <div className={styles.mainNews}>
+      <div data-aos="fade-up"   data-aos-delay="800" data-aos-duration="2000" className={styles.mainNews}>
         <MainPanel title={news[0].title} img={news[0].urlToImage} description={news[0].content}/>
       </div>
-      <div className={styles.sideNews}>
+      <div data-aos="fade-up"   data-aos-delay="1000" data-aos-duration="2000" className={styles.sideNews}>
         <TwitterTrends />
       </div>
-      <div className={`${styles.panelNews1} ${styles.panelNews}`}>
+      <div data-aos="fade-up"  data-aos-duration="1000" className={`${styles.panelNews1} ${styles.panelNews}`}>
         <Panel title={news[2].title} img={news[2].urlToImage} description={news[2].content}/>
       </div>
-      <div className={`${styles.panelNews2} ${styles.panelNews}`}>
+      <div  data-aos="fade-up"  data-aos-duration="1000" className={`${styles.panelNews2} ${styles.panelNews}`}>
         <Panel title={news[3].title} img={news[3].urlToImage} description={news[3].content}/>
       </div>
-      <div className={`${styles.panelNews3} ${styles.panelNews}`}>
+      <div data-aos="fade-up"  data-aos-duration="1000" className={`${styles.panelNews3} ${styles.panelNews}`}>
         <Panel title={news[4].title} img={news[4].urlToImage} description={news[4].content}/>
       </div>
     </div>

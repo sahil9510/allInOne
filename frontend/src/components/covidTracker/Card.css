@@ -6,13 +6,25 @@
   font-size: 20px;
 }
 .info-box {
-  padding: 10px;
+  margin-top: 20px;
   background-color: #efe5dc;
+  margin-bottom: 50px;
 }
 .imageIcons {
   color: mediumslateblue;
 }
 
-.text-info{
+.info-box .text-info{
 padding-top: 32px;
+}
+
+
+.col-lg-12{
+  text-align: center;
+  margin: 0;
+  padding-right: 100px;
+}
+
+.text{
+  font-size: 1.7rem;
 }

@@ -2,7 +2,43 @@
 
 .newsBox{
     display: flex;
-    width: 80vw;
+    text-align: left;
+    align-items: center;
+    width: 70vw;
     height: 40vh;
-    border: 2px solid black;
+    background-color: white;
+    border-radius: 10px;
+    overflow: hidden;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 10px 36px 0px, rgba(0, 0, 0, 0.06) 0px 0px 0px 1px;
+}
+
+.imageBox{
+    width: 120%;
+    overflow: hidden;
+}
+
+.newsBox img{
+    justify-self:normal;
+    width: 120%;
+    position: relative;
+    right: 10%;
+}
+
+
+.newsBox h2{
+    font-family: 'Ubuntu', sans-serif;
+    margin-bottom: 5%;
+}
+.content{
+    padding-left: 20px;
+}
+
+.content h5{
+    display: inline-block;
+    margin-right: 10px;
+}
+
+.content p{
+    font-size: 1rem;
+    display: inline-block;
 }

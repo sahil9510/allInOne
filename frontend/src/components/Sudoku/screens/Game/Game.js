@@ -181,7 +181,7 @@ const Game = () => {
         onClick={() => setShowInformationModal((show) => !show)}
         className="main-title"
       >
-        Let's play Sudoku! 
+        Start your day with Sudoku! 
       </h1>
       {showInformationModal && (
         <InformationModal

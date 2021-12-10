@@ -20,9 +20,11 @@ const ImageSlider = ({prevSlide,nextSlide,currentSlide,changeSlide,}) => {
   }
 
 
+
+
   return (<>
       <div className={styles.adjacent}>
-      <img src={SliderData[prev].image} alt="Alt" className={`${styles.image} ${styles.prevSlide}`} />
+      <img  src={SliderData[prev].image} alt="Alt" className={`${styles.image} ${styles.prevSlide}`} />
       </div>
       <div className={styles.adjacent}>
       <img src={SliderData[next].image} alt="Alt" className={`${styles.image} ${styles.nextSlide}`} />
@@ -50,9 +52,9 @@ const ImageSlider = ({prevSlide,nextSlide,currentSlide,changeSlide,}) => {
     <div className={styles.points}>
         {SliderData.map((circle,index)=>{
             if(index===currentSlide){
-                return <div className={styles.pointer} style={{backgroundColor:"black"}}/>
+                return <div key={index} className={styles.pointer} style={{backgroundColor:"black"}}/>
             }else{
-                return <div id={index} onClick={changeSlide} className={styles.pointer}/>
+                return <div key={index} id={index} onClick={changeSlide} className={styles.pointer}/>
             }
         })}
     </div>

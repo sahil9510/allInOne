@@ -1,0 +1,124 @@
+.page{
+    margin-top: 8%;
+    text-align: center;
+}
+
+.heading{
+    padding: 0 20%;
+    margin-bottom: 2%;
+}
+
+.heading p{
+    font-size: 1.1rem;
+    margin-right: 10px;
+}
+
+.heading em{
+    font-weight: bold;
+}
+
+.content{
+    position: relative;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.content button{
+    margin: 0 50px;
+    height: 6vh;
+    width: 120px;
+    border: none;
+    font-size: 1.3rem;
+    border-radius: 10px;
+    cursor: pointer;
+    font-family: 'Ubuntu', sans-serif;
+    background-color: inherit;
+    border: 2px solid #ce9277;
+    color: #ce9277;
+}
+
+
+.content button:hover{
+    background-color: #ce9277;
+    color: white;
+
+}
+.textarea{
+    text-align: left !important;
+    margin-top: 10px;
+    width: 500px;
+    height: 500px;
+    -moz-border-bottom-colors: none;
+    -moz-border-left-colors: none;
+    -moz-border-right-colors: none;
+    -moz-border-top-colors: none;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.5);
+    border-color: -moz-use-text-color #FFFFFF #FFFFFF -moz-use-text-color;
+    border-image: none;
+    border-radius: 6px 6px 6px 6px;
+    border-style: none solid solid none;
+    border-width: medium 1px 1px medium;
+    box-shadow: 0 1px 2px rgba(0, 0, 0, 0.12) inset;
+    color: #555555;
+    font-family: "Helvetica Neue",Helvetica,Arial,sans-serif;
+    font-size: 1.2rem;
+    line-height: 1.6rem;
+    padding: 20px 20px;
+    transition: background-color 0.2s ease 0s;
+}
+
+.textarea::placeholder{
+    color: #555555;  
+}
+
+.textarea:focus{
+    border: none;
+    background: none repeat scroll 0 0 rgba(255, 255, 255, 0.2);
+    outline-width: 0;
+}
+
+.heading h1{
+    font-size: 4rem;
+}
+
+.content span{
+    position: absolute;
+    display: flex;
+    z-index: 2;
+    width: 8%;
+    padding: 10px 12px;
+    font-size: 1.3rem;
+    background-color: red;
+    top: -8%;
+    border-radius: 10px 10px 0 0;
+    color: white;
+    background-color: rgb(172,117,92,0.8);
+}
+
+.inputSpan{
+
+    left: 12%;
+}
+
+.outputSpan{
+    right: 34%;
+}
+
+
+.category{
+    padding-right: 12%;
+    display: flex;
+    justify-content: right;
+    margin-bottom: 4%;
+}
+
+.category h6{
+    padding-top: 10px;
+    margin: 0;
+    font-size: 1.3rem;
+}
+
+.point{
+    margin: 10px;
+}

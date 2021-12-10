@@ -26,15 +26,21 @@
     left: 60vw;
     border-radius: 10%;
 }
-
+h4{
+    color: #774936;
+}
 .welcome{
     text-align: center;
     margin-top: 5%;
+    animation: onLoad 1.5s 0.5s backwards;
+}
+.sang{
+    color: #781D42;
 }
 
 .welcome h1{
     font-size: 4rem;
-    color:pink;
+    color:#B07D62;
 }
 
 .login:hover{
@@ -61,10 +67,24 @@
 
 .info h2{
     font-size: 3rem;
+    color: #774936;
+    
 }
 .info p{
     font-size: 1.3rem;
     padding: 0 10%;
+}
+
+.desc-active{
+    opacity: 1;
+    transition-duration: 1s;
+    transform: scale(1);
+}
+
+.desc{
+    transform: scale(0.8);
+    opacity: 0;
+    transition: 2s ease-in;
 }
 
 .promotion{
@@ -95,4 +115,18 @@
     background-color: rgb(255, 255, 255,0);
     color: red;
     font-size: 1.5rem;
+}
+
+
+
+
+
+@keyframes onLoad{
+    from{
+        opacity: 0;
+        transform: translateY(-10%);
+    }to{
+        opacity: 1;
+        transform: translateY(0%);
+    }
 }

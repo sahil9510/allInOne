@@ -6,3 +6,9 @@ margin-top: 10px;
 .inputState{
 height: 35px;
 }
+
+
+.nextPrev{
+    border: none;
+    background-color: inherit;
+}

@@ -41,13 +41,13 @@
 
 .slide{
     opacity: 0.5;
-    transition-duration: 1s ease;
+    transition: 2s ease-in;
 }
 
 .slide-active{
     opacity: 1;
     transition-duration: 1s;
-    transform: scale(1.01);
+    transform: scale(1.02);
 }
 
 
@@ -57,7 +57,20 @@
     position: absolute;
     top: 68vh;
     transform: scale(0.8);
+    animation: prevSlide 1s 0.5s ease-out both;
 }
+
+
+@keyframes prevSlide{
+    from{
+        transform: translateX(500px) scale(0.9);
+        ;
+    }to{
+        transform: translateX(0) scale(0.8);
+    }
+}
+
+
 
 .nextSlide{
     z-index: -1;
@@ -66,6 +79,18 @@
     top: 68vh;
     transform: scale(0.8);
     right: 0vw;
+    animation: nextSlide 1s 0.5s ease-out both;
+}
+
+
+
+@keyframes nextSlide{
+    from{
+        transform: translateX(-500px) scale(0.9);
+        ;
+    }to{
+        transform: translateX(0) scale(0.8);
+    }
 }
 
 .points{
