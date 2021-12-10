@@ -156,6 +156,9 @@ a.logo{
 .sudoku{
     font-size: 1.1rem;
 }
+.sudoku:hover{
+    font-size: 1.2rem;
+}
 .navHead{
     font-size: 1.1rem;
 }
