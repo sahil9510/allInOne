@@ -45,6 +45,7 @@ const NavBar = () => {
         <div  className={styles.tools} onMouseEnter={onMouseEnter} onMouseLeave={onMouseLeave}>
         <Link to='#'>Tools</Link>
         {dropdown && <Dropdown />}
+
         </div>
         {/* <Link to="/paraphrasing">Paraphraser</Link>
         <Link to="/converter">Converter</Link> */}

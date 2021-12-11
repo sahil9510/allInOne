@@ -16,14 +16,18 @@ export const SliderData = [
       message: "A personalised news aggregator that organises and highlights what’s happening in the country so that you can discover more about the stories that matter to you."
     },
     {
-      image:'https://images.unsplash.com/photo-1475189778702-5ec9941484ae?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1351&q=80',
-      title: "PlaceHolder",
-      message: "ndasmsfsdNfmds"
+      image:'para.jpg',
+      title: "Paraphraser",
+      message: "Paraphrase tool has numerous features including, rewriting essays, removing plagiarism, and rewording articles. Our paraphrasing tool works best as a word changer and sentence rephraser.Nfmds"
     },
     {
-      image:
-        'https://images.unsplash.com/photo-1503177119275-0aa32b3a9368?ixlib=rb-1.2.1&ixid=MXwxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHw%3D&auto=format&fit=crop&w=1350&q=80',
-      title: "PlaceHolder",
-      message: "dasnmndsk"
+      image:'converter.jpg',
+      title: "PDF Converter",
+      message: "With word to pdf cconverter,you can efficiently and accurately transform any Word document to PDF online. Same layout, same formatting."
+    },
+    {
+      image:'sudoku.jpg',
+      title: "Sudoku",
+      message: "Sudoku is one of the most popular puzzle games of all time. The goal of Sudoku is to fill a 9×9 grid with numbers so that each row, column and 3×3 section contain all of the digits between 1 and 9. As a logic puzzle, Sudoku is also an excellent brain game."
     }
   ];

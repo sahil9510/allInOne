@@ -13,6 +13,7 @@
     height: 450px;
     border-radius: 10px;
     z-index: 10;
+    border: 4px solid white;
 }
 
 .right-arrow{
@@ -44,6 +45,7 @@
 .slide{
     opacity: 0.5;
     transition: 2s ease-in;
+
 }
 
 .slide-active{
