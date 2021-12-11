@@ -8,19 +8,24 @@
 }
 
 .box h1{
+    color: #774936;
     font-family: 'Ubuntu', sans-serif;
     margin: 0;
     display: inline-block;
+  font-size: 4rem;    
 }
 
 .box h2{
+    color: #774936;
     margin-top: 4%;
 }
 
 .box p{
+    color: #774936;
     font-size: 1.3rem;
 }
 .box h4{
+    color: #774936;
     margin: 0;
     display: inline-block;
 }

@@ -36,9 +36,8 @@ const Map = ({ setLoading }) => {
   });
 
   return (
-    <div
+    <div className="googleMap"
 
-      style={{ height: "50vh", width: "110%" }}
     >
       <GoogleMapReact
         bootstrapURLKeys={{ key: `${process.env.REACT_APP_MAP_API_KEY}` }}

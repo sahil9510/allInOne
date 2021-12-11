@@ -9,20 +9,16 @@ const CardComponent = ({totalCases}) => {
     <div data-aos="zoom-in-right" data-aos-duration="2000">
       {totalCases.map((item, index) => (
         <div className="row">
-          <div className="col-lg-12">
+          <div className="col-lg-12 colsInfo">
             <div key={index} className="info-box">
               <Row gutter={16}>
                 {/* confirmed */}
                 <Col span={6}>
-                  <Card
-                    title="Confirmed"
-                    bordered={false}
-                    style={{width: 300, height: 215}}
-                  >
+                  <Card className="cardInfo confirm" title="Confirmed" bordered={false}>
                     <img
                       src={confirmed}
                       alt="Confirmed"
-                      style={{height: '50px'}}
+                      style={{height: '45px', position: 'relative', top: '-10px'}}
                     />
                     <br />
                     <i className="fas fa-arrow-up" />
@@ -39,11 +35,7 @@ const CardComponent = ({totalCases}) => {
 
                 {/* active */}
                 <Col span={6}>
-                  <Card
-                    title="Active"
-                    bordered={false}
-                    style={{width: 300, height: 215}}
-                  >
+                  <Card className="cardInfo active" title="Active" bordered={false}>
                     <span className="imageIcons">
                       <i className="fab fa-creative-commons-sampling fa-3x" />
                     </span>
@@ -56,9 +48,10 @@ const CardComponent = ({totalCases}) => {
                 {/* recovered */}
                 <Col span={6}>
                   <Card
+                    className="cardInfo"
                     title="Recovered"
                     bordered={false}
-                    style={{width: 300, height: 215}}
+
                   >
                     <span style={{color: 'green'}}>
                       <i className="fab fa-creative-commons-sampling fa-3x" />
@@ -78,10 +71,10 @@ const CardComponent = ({totalCases}) => {
 
                 {/* death */}
                 <Col span={6}>
-                  <Card
-                    title="Death"
-                    bordered={false}
-                  >
+                  <Card title="Death" bordered={false}>
+                    <span style={{color: 'black'}}>
+                      <i className="fas fa-peace fa-3x" />
+                    </span>
                     <br />
                     <i className="fas fa-arrow-up" />
                     <CountUp

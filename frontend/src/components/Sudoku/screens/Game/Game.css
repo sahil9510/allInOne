@@ -1,13 +1,9 @@
-*{
+.Game{
   margin: 0;
   padding: 0;
   box-sizing: border-box;
   color: #774936;
   user-select: none;
-}
-
-
-.Game {
   display: flex;
   align-items: center;
   justify-content: center;
@@ -51,4 +47,14 @@
   border: none;
   font-size: 25px;
   cursor: pointer;
+}
+@media screen and (max-width: 768px){
+  .main-title {
+    margin-top: 90px;
+    margin-bottom: 7px;
+    font-style: italic;
+    color: #774936;
+    font-weight: 500;
+    font-size: 1.8rem;
+  }
 }

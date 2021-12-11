@@ -12,3 +12,19 @@ height: 35px;
     border: none;
     background-color: inherit;
 }
+@media screen and (max-width: 768px){
+    .space.search{
+        position: relative;
+        top: -30px;
+    }
+    .table-main{
+        position: relative;
+        top: -30px;
+        overflow-x: auto;
+
+    }
+    .space.num{
+        position: relative;
+        top: -15px;
+    }
+}

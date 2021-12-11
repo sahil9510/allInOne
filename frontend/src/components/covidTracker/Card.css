@@ -28,3 +28,40 @@ padding-top: 32px;
 .text{
   font-size: 1.7rem;
 }
+.cardInfo{
+  width: 300;
+   height: 215;
+}
+.confirm{
+  height: 98%;
+}
+
+@media screen and (max-width: 768px){
+  .colsInfo{
+    position: relative;
+    width: 100%;
+    left: 30px;
+
+  }
+.cardInfo{
+
+    width: 240;
+     height: 100;
+  }
+  .ant-card-head-title {
+    font-size: 20px;
+  }
+  
+  .count {
+    font-size: 18px;
+  }
+  .confirm{
+    height: 99%;
+  }
+  .text{
+    font-size: 1.4rem;
+  }
+  .active{
+    height: 99%;
+  }
+}

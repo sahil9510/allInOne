@@ -57,7 +57,7 @@ getFact();
 
   return (
     <div className={styles.homeScreen}>
-        <h1>Welcome</h1>
+        <h1 className={styles.welcome}>Welcome</h1>
       <div className={styles.row1}>
         <FactBox fact={fact} />
         {/* <Graph /> */}

@@ -1,10 +1,4 @@
-.mask{
-  font-size: 30rem !important;
-  color: white;
-  position: absolute;
-  top: -5%;
-  right: -10%;
-}
+
 
 .main{
   /* background-image: url('images/orma.png');
@@ -51,4 +45,45 @@ Table {
     font-size: 20px;
     margin: 0;
 
+}
+@media screen and (max-width: 768px) {
+
+  .heading {
+height: 20%;
+text-align: left;
+    padding-top: 0;
+    margin-top: 5px;
+  }
+  .flag-img {
+    position: relative;
+left: -40%;
+    text-align: left;
+    margin: 0;
+    /* display: block; */
+    height: 60px;
+    width: 50%;
+    margin-bottom: 5px;
+  
+  }
+  .h1 {
+ position: absolute;
+ top: -1%;
+ left: 20px;
+    font-size: 35px;
+    margin: 0;
+  }
+  .h4{
+      display: inline-block;
+      position: relative;
+      font-size: 20px;
+      margin: 0;
+      top: -35px;
+      left: 50px;
+  
+  }
+  .headline{
+    width: 75.5%;
+    position: relative;
+left: 69px;
+  }
 }
