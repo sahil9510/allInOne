@@ -1,0 +1,94 @@
+.dropdown-menu {
+  justify-content: center;
+  display: flex;
+  flex-direction: column;
+  background: rgba(0, 0, 0, 0.7);
+  width: 100%;
+  /* position: absolute; */
+  position: fixed;
+    top: 62px;
+    list-style: none;
+    text-align: start;
+    z-index: 900;
+    animation: fadeIn 0.8s ease-in both ;
+  }
+
+  .dropdown-menu a{
+    color: white  !important;
+  }
+  
+  .dropdown-menu li {
+    text-align: center;
+    color: white !important;
+    font-size: 1.3rem;
+    padding: 5% 0;
+    cursor: pointer;
+  }
+  
+  .dropdown-menu li:hover {
+    font-size: 1.6rem;
+    background-color: rgb(255, 255, 255,0.9);
+    
+  }
+
+  .dropdown-menu li:hover a{
+    color:rgb(157,107,83) !important;
+  }
+  
+  /* .dropdown-menu.clicked {
+    display: none;
+  } */
+  
+  .dropdown-link {
+    display: block;
+    height: 100%;
+    width: 100%;
+    text-decoration: none;
+    color: #fff;
+    padding: 16px;
+  }
+
+
+  .logout:hover{
+    background: inherit !important;
+  }
+
+  .dropdown-menu button{
+    font-family: 'Ubuntu';
+    padding: 10px 20px;
+    color: white;
+    background-color: inherit;
+    border-radius: 10px;
+    width: 70%;
+    border: 2px solid white;
+  }
+  
+  .dropdown-menu hr{
+    background-color: white;
+    height: 1px;
+    width: 50%;
+    color: white;
+    margin: 4% 25%;
+  }
+
+  .dropdown-menu button:hover{
+    background-color: white;
+    color: black;
+  }
+
+  /* @media screen and (max-width: 960px) {
+    .fa-caret-down {
+      display: none;
+    }
+  } */
+
+
+  @keyframes fadeIn{
+    from{
+      opacity: 0;
+      transform: translateY(-500px);
+    }to{
+      opacity: 1;
+      transform: translateY(0);
+    }
+  }

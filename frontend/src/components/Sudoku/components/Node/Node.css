@@ -1,0 +1,44 @@
+.cell {
+  border: 1px solid #774936;
+  width: 45px;
+  height: 40px;
+  position: relative;
+  left: 12px;
+  text-align: center;
+  user-select: none;
+  font-weight : bold;
+
+}
+
+.right-border {
+  border-right: 3px solid #774936;
+}
+
+.bottom-border {
+  border-bottom: 3px solid #774936;
+}
+
+.cell-modifiable{
+  cursor: pointer;
+  color: #FB3640;
+}
+
+.cell-invalid {
+  background-color: #ff000054;
+}
+
+.cell{
+  font-size: 1.4rem;
+}
+
+.cell-hinted{
+  color: orange;
+  animation-name: hintAnimation;
+  animation-duration: 2s;
+  animation-timing-function: ease-out;
+}
+
+@keyframes hintAnimation {
+  from {background-color: orange;}
+  to {background-color: initial;}
+}

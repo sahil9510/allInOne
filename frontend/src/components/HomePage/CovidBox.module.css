@@ -14,11 +14,28 @@
 
 
 }
-h3{
+.h3{
     color: #676767;
     display: flex;
     position: relative;
     text-align: center;
     margin-left: 25%;
     font-size: 2rem;
+}
+
+
+@media (max-width: 768px){
+    .covidBox{
+        width: 95vw;
+    }
+
+    .data{
+        width: 95vw;
+        height: 36vh;
+    }
+
+    .h3{
+        margin: 6% 19%;
+        font-size: 1.8rem;
+    }
 }

@@ -15,10 +15,11 @@ router.post(
     check('text')
       .not()
       .isEmpty(),
+      check('date').isLength({min:6}),
      ],
   notesControllers.createNote
 );
 
-router.delete('/:nid', notesControllers.deleteNote);
+router.delete('/user/:nid', notesControllers.deleteNote);
 
 module.exports = router;

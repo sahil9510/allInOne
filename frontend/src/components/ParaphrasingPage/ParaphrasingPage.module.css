@@ -17,6 +17,8 @@
     font-weight: bold;
 }
 
+
+
 .content{
     position: relative;
     display: flex;
@@ -26,7 +28,6 @@
 }
 
 .content button{
-    margin: 0 50px;
     height: 6vh;
     width: 120px;
     border: none;
@@ -48,8 +49,7 @@
 }
 .textarea{
     text-align: left !important;
-    margin-top: 10px;
-    margin-bottom: 50px;
+    margin: 10px 50px 50px 50px;
     width: 500px;
     height: 500px;
     -moz-border-bottom-colors: none;
@@ -125,4 +125,61 @@
 
 .point{
     margin: 10px;
+}
+
+
+@media (max-width:768px){
+    .page{
+        margin-top: 30%;
+    }
+
+    .heading{
+        padding: 0 10%;
+        margin-bottom: 2%;
+    }
+    .heading h1{
+        font-size: 3.3rem;
+    }
+
+    .content{
+        flex-direction: column;
+    }
+
+    .textarea{
+        width: 90vw;
+        margin: 70px 10px 50px;
+    }
+
+    .content span{
+        width: 30%;
+    }
+
+    .inputSpan{
+        left: 8% !important;
+        top: 1.5% !important;
+    }
+    .outputSpan{
+        left: 8% !important;
+        top: 53% !important;
+    }
+
+    .category{
+        margin-top: 50px;
+        padding: 0 !important;
+        padding-right: 20px !important;
+    }
+
+    .point{
+        margin: 8px;
+    }
+
+    .category h6{
+        width: 60vw;
+        padding-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .point:nth-child(5){
+        display: none;
+    }
 }

@@ -24,3 +24,24 @@
     margin: 0;
     display: inline-block;
 }
+
+
+@media (max-width: 768px){
+    .box{
+        text-align: center;
+        width: 100%;
+        padding: 50px 0;
+    }
+
+    .box h1{
+        font-size: 3rem;
+    }
+
+    .box h2{
+        margin-top:50px;
+    }
+
+    .box h4{
+         margin-left: 5px;   
+    }
+}

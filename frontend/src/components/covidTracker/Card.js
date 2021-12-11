@@ -81,11 +81,7 @@ const CardComponent = ({totalCases}) => {
                   <Card
                     title="Death"
                     bordered={false}
-                    style={{width: 300, height: 215}}
                   >
-                    <span>
-                      <i className="fas fa-skull-crossbones fa-3x" />
-                    </span>
                     <br />
                     <i className="fas fa-arrow-up" />
                     <CountUp

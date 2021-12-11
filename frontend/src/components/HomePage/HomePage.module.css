@@ -41,3 +41,17 @@
     justify-content: center;
     align-items: center;
 }
+
+
+@media (max-width: 768px){
+    .homeScreen{
+        margin-top: 30%;
+    }
+
+    .welcome{
+        font-size: 4.3rem !important;
+    }
+    .row1{
+        flex-direction: column;
+    }
+}

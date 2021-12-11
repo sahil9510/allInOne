@@ -42,7 +42,7 @@ const QuotePage = () => {
       </Link>
       <div className={styles.welcome}>
         <h1>
-          Welcome to <em>sang</em>
+          Welcome to <em className={styles.sang}>sang</em>
         </h1>
         <h4>A personalised website according to all your needs.</h4>
       </div>

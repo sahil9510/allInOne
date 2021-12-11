@@ -9,7 +9,9 @@ import KeepNotes from "./components/keepNotes/KeepNotes";
 import CovidTracker from "./components/covidTracker/CovidTracker";
 import QuotePage from "./components/QuotePage/QuotePage";
 import ParaphrasingPage from "./components/ParaphrasingPage/ParaphrasingPage";
+import ConverterPage from "./components/ConverterPage/ConverterPage";
 import { AuthContext } from "./context/auth-context";
+import Game from "./components/Sudoku/screens/Game/Game";
 import AOS from 'aos';
 import 'aos/dist/aos.css';
 
@@ -91,8 +93,14 @@ function App() {
           <Route path="/notes">
             <KeepNotes />
           </Route>
+          <Route path="/sudoku">
+            <Game />
+          </Route>
           <Route path='/paraphrasing'>
             <ParaphrasingPage />
+          </Route>
+          <Route path="/converter">
+            <ConverterPage />
           </Route>
           <Route path="*">
             <Redirect to="/" />
@@ -126,6 +134,7 @@ function App() {
       value={{
         userId: userId,
         token: token,
+        userId: userId,
         name: name,
         isLoggedIn: isLoggedIn,
         login: loginHandler,

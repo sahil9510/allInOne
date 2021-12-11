@@ -33,3 +33,10 @@
     animation-timing-function: cubic-bezier;
     animation-iteration-count: infinite;
   }
+
+
+  @media (max-width:768px){
+    #container{
+      width: 20vw;
+    }
+  }

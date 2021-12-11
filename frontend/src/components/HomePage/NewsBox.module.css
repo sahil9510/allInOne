@@ -42,3 +42,38 @@
     font-size: 1rem;
     display: inline-block;
 }
+
+
+@media (max-width:768px){
+    .newsBox{
+        width: 100vw;
+        height: 30vh;
+        flex-direction: column;
+        text-align: center;
+    }
+
+    .imageBox{
+        width: 200%;
+        height: 100vw;
+    }
+
+    .newsBox h2{
+        padding-top: 10px;
+        font-size: 1.2rem;
+    }
+
+    .content h5{
+        font-size: 1rem;
+    }
+
+    .newsBox img{
+        width: 50%;
+        position: relative;
+        justify-self: center;
+        right: 0;
+    }
+
+    .newsBox h6{
+        display: none;
+    }
+}
