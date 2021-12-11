@@ -1,30 +1,50 @@
-
-.space{
-margin-bottom: 16px;
-margin-top: 10px;
+.space {
+  margin-bottom: 16px;
+  margin-top: 10px;
 }
-.inputState{
-height: 35px;
+.inputState {
+  width: 130% !important;
+  position: relative;
+  top: -5%;
+  left: -30%;
+  height: 37px;
 }
 
-
-.nextPrev{
-    border: none;
-    background-color: inherit;
+.nextPrev {
+  border: none;
+  background-color: inherit;
 }
-@media screen and (max-width: 768px){
-    .space.search{
-        position: relative;
-        top: -30px;
-    }
-    .table-main{
-        position: relative;
-        top: -30px;
-        overflow-x: auto;
-
-    }
-    .space.num{
-        position: relative;
-        top: -15px;
-    }
+@media screen and (max-width: 768px) {
+  .space.search {
+    position: relative;
+    top: -30px;
+  }
+  .table-main {
+    position: relative;
+    top: -30px;
+    overflow-x: auto;
+  }
+  .space.num {
+    position: relative;
+    top: -15px;
+  }
+  .inputState {
+    margin-left: 30px;
+    width: 115% !important;
+    position: relative;
+    top: -5%;
+    left: -20%;
+    height: 37px;
+  }
+  .space button {
+    position: relative;
+    top: 10%;
+    font-size: 12px;
+    text-align: center;
+    width: 100%;
+    left: 15px;
+  }
+  .search {
+    position: relative;
+  }
 }
