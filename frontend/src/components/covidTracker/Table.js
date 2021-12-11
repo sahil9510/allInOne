@@ -140,7 +140,7 @@ const TableComponent = ({
         <button
           type="submit"
           onClick={searchData}
-          className="btn btn-raised btn-success"
+          className="btn btn-raised btn-success search"
         >
           Search
         </button>
