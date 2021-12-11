@@ -6,6 +6,10 @@
 .page h1{
     font-family: 'Libre Baskerville', serif;
     font-size: 4rem;
+    color: #774936;
+}
+.page h5{
+    color: #774936;
 }
 
 .box{
@@ -112,11 +116,13 @@ button.pdf:hover{
     .page h1{
         font-size: 3.2rem;
         margin-bottom: 8%;
+        color: #774936;
     }
 
     .page h5{
         font-size: 1.2rem;
         margin-bottom: 20%;
+        color: #774936;
     }
 
     .box{

@@ -8,7 +8,7 @@ const LoadingPage = ()=>{
     console.log(data.quotes);
     let randomNumber = Math.floor(Math.random()*101);
     const randomQuote = data.quotes[randomNumber];
- return <div >
+ return <div>
     <LoadingSpinner />
     <div className={styles.quoteBox}>
     <span><em>"{randomQuote.quote}"</em></span>
