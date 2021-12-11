@@ -80,8 +80,8 @@ const ConverterPage = () => {
         <LoadingSpinner />
         </div>
         )}
-        {name.length===0 && <img src='doc.png'/>}
-        {name.length>0 && <img src='pdf.png'/>}
+        {name.length===0 && <img alt="doc" src='doc.png'/>}
+        {name.length>0 && <img alt="pdf" src='pdf.png'/>}
       <input
         type="file"
         accept=".docx"

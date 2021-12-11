@@ -134,7 +134,6 @@ function App() {
       value={{
         userId: userId,
         token: token,
-        userId: userId,
         name: name,
         isLoggedIn: isLoggedIn,
         login: loginHandler,
