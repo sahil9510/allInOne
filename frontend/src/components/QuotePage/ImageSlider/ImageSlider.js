@@ -52,7 +52,7 @@ const ImageSlider = ({prevSlide,nextSlide,currentSlide,changeSlide,}) => {
     <div className={styles.points}>
         {SliderData.map((circle,index)=>{
             if(index===currentSlide){
-                return <div key={index} className={styles.pointer} style={{backgroundColor:"black"}}/>
+                return <div key={index} className={styles.pointer} style={{backgroundColor:"#781d42"}}/>
             }else{
                 return <div key={index} id={index} onClick={changeSlide} className={styles.pointer}/>
             }

@@ -49,3 +49,15 @@
   position: relative;
   top: 10px;
 }
+
+@media screen and (max-width: 768px){
+  .choice-text{
+    font-size: 18px;
+  }
+  .choice {
+    margin: 4px;
+    padding-left: 15px;
+    padding-right: 15px;
+    padding-bottom: -100%;
+  }
+}

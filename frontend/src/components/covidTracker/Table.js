@@ -126,8 +126,8 @@ const TableComponent = ({
   };
 
   return (
-    <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="300">
-      <Space className="space">
+    <div data-aos="fade-up" data-aos-duration="1500" data-aos-offset="400">
+      <Space className="space search">
         <Input
           className="inputState"
           placeholder="Search Your State"
@@ -174,7 +174,7 @@ const TableComponent = ({
         loading={loading}
         bordered
       />
-      <Space className="space">
+      <Space className="space num">
         <Pagination
           onChange={(value) => setPage(value)}
           pageSize={postPerPage}

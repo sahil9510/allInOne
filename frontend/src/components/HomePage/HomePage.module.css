@@ -10,10 +10,16 @@
     padding: 2% 10%;
 }
 
+.welcome{
+    font-size: 5rem;
+}
+
+
 .homeScreen h1{
     font-family: 'Raleway', sans-serif;
+    color: #774936;
     margin: 0;
-    font-size: 4rem;
+    /* font-size: 4.2rem; */
 }
 
 .welcome{

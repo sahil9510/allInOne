@@ -44,9 +44,9 @@ const QuotePage = () => {
         <h1>
           Welcome to <em className={styles.sang}>sang</em>
         </h1>
-        <h4>A personalised website according to all your needs.</h4>
+        <h4 className={styles.sangH}>A personalised website according to all your needs.</h4>
       </div>
-      <div>
+      <div className="imageSlider">
         <ImageSlider
           currentSlide={currentSlide}
           nextSlide={nextSlide}

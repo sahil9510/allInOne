@@ -1,5 +1,18 @@
-.noteslist{
+.noteslist {
+  display: grid;
+  grid-gap: 1rem;
+  grid-template-columns: repeat(auto-fit, minmax(250px, 1fr));
+}
+@media screen and (max-width: 768px) {
+  .noteslist {
     display: grid;
-    grid-gap: 1rem;
-    grid-template-columns: repeat(auto-fit, minmax(250px,1fr));
+    padding-left: 30px;
+ display: flex;
+
+ flex-direction: column-reverse;
+
+
+width:90%;
+    padding-bottom: 20px;
+  }
 }

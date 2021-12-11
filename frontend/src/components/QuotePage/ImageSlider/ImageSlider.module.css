@@ -20,10 +20,11 @@
     top: 20vh;
     right: 20vw ;
     font-size: 3rem !important;
-    color: #000;
+    color: #781d42;
     z-index: 10;
     cursor: pointer;
     user-select: none;
+    opacity: 0.8;
 
 }
 
@@ -32,10 +33,11 @@
     top: 20vh;
     left: 20vw;
     font-size: 3rem !important;
-    color: #000;
+    color: #781d42;
     cursor: pointer;
     z-index: 10;
     user-select: none;
+    opacity: 0.8;
 }
 
 
@@ -108,7 +110,7 @@
 
 .pointer{
     border-radius: 100%;
-    border: 2px solid black;
+    border: 2px solid #781d42;
     width: 20px;
     height: 20px;
     z-index: 100;

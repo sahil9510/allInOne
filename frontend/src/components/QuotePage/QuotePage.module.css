@@ -3,117 +3,166 @@
     padding-bottom: 10vh;
 } */
 
-.logo{
-    margin: 0;
-    position: relative;
-    top: 8%;
-    left: 5%;
-    width: 15%;
+.logo {
+  margin: 0;
+  position: relative;
+  top: 8%;
+  left: 5%;
+  width: 15%;
 }
 
-.login{
-    cursor: pointer;
-    font-family: 'Ubuntu', sans-serif;
-    border: none;
-    background-color: red;
-    color: white;
-    padding: 10px 30px;
-    font-size: 1.5rem;
+.login {
+  cursor: pointer;
+  font-family: 'Ubuntu', sans-serif;
+  border: none;
+  background-color: red;
+  color: white;
+  width: 15%;
+  height: 50px;
+  font-size: 1.5rem;
+  display: inline-block;
+  position: relative;
+  top: 8%;
+  left: 60vw;
+  border-radius: 10%;
+}
+.sangH {
+  /* color: #774936;
+  font-size: 1.5rem; */
+}
+
+.sangH{
     display: inline-block;
-    position: relative;
-    top: 8%;
-    left: 60vw;
-    border-radius: 10%;
+    font-family: Arial, Helvetica, sans-serif;
+    font-size: 2rem;
+    color: #533535;
+    animation: flickerAnimation 5s infinite;
+    -webkit-animation: flickerAnimation 5s infinite;
+    -moz-animation: flickerAnimation 5s infinite;
+    -o-animation: flickerAnimation 5s infinite;
+    -ms-animation: flickerAnimation 5s infinite;
+  }
+  @keyframes flickerAnimation {
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-o-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-moz-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-webkit-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+  @-ms-keyframes flickerAnimation{
+    0%   { opacity:1; }
+    50%  { opacity:0; }
+    100% { opacity:1; }
+  }
+
+.welcome {
+  text-align: center;
+  /* margin-top: 2%; */
+  animation: onLoad 1.5s 0.5s backwards;
 }
-h4{
-    color: #774936;
-}
-.welcome{
-    text-align: center;
-    margin-top: 5%;
-    animation: onLoad 1.5s 0.5s backwards;
-}
-.sang{
-    color: #781D42;
+.sang {
+  color: #781d42;
 }
 
-.welcome h1{
-    font-size: 4rem;
-    color:#B07D62;
+.welcome h1 {
+  font-size: 6rem;
+  color: #b07d62;
 }
 
-.login:hover{
-    border: 2px red solid;
-    color: red;
-    background-color: rgb(255, 0, 0,0);
+.login:hover {
+  border: 2px red solid;
+  color: red;
+  background-color: rgb(255, 0, 0, 0);
 }
 
-
-.box{
-    background-color: white;
-    height: 60%;
-    width: 40%;
-    margin: 10% 30%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+.box {
+  background-color: white;
+  height: 60%;
+  width: 40%;
+  margin: 10% 30%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
 }
 
-
-.info{
-    margin-top: 20vh;
-    text-align: center;
-
+.info {
+  margin-top: 20vh;
+  text-align: center;
 }
 
-.info h2{
-    font-size: 3rem;
-    color: #774936;
-    
+.info h2 {
+  font-size: 3rem;
+  color: #774936;
 }
-.info p{
-    font-size: 1.3rem;
-    padding: 0 10%;
-}
-
-.desc-active{
-    opacity: 1;
-    transition-duration: 1s;
-    transform: scale(1);
+.info p {
+  font-size: 1.3rem;
+  padding: 0 10%;
 }
 
-.desc{
-    transform: scale(0.8);
+.desc-active {
+  opacity: 1;
+  transition-duration: 1s;
+  transform: scale(1);
+}
+
+.desc {
+  transform: scale(0.8);
+  opacity: 0;
+  transition: 2s ease-in;
+}
+
+.promotion {
+  text-align: center;
+  background-color: white;
+  width: 40%;
+  margin: 5% 30%;
+  margin-bottom: 100%;
+  padding: 3% 4%;
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px,
+    rgba(0, 0, 0, 0.3) 0px 30px 60px -30px,
+    rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
+}
+
+.promotion button {
+  margin: 5%;
+  padding: 2% 5%;
+  background-color: red;
+  color: white;
+  cursor: pointer;
+  border: 2px solid red;
+  font-size: 1.4rem;
+  border-radius: 10px;
+}
+
+.promotion button:hover {
+  background-origin: 2px solid red;
+  background-color: rgb(255, 255, 255, 0);
+  color: red;
+  font-size: 1.5rem;
+}
+
+@keyframes onLoad {
+  from {
     opacity: 0;
-    transition: 2s ease-in;
-}
-
-.promotion{
-    text-align: center;
-    background-color: white;
-    width: 40%;
-    margin: 5% 30%;
-    margin-bottom: 100%;
-    padding: 3% 4%;
-    box-shadow: rgba(50, 50, 93, 0.25) 0px 50px 100px -20px, rgba(0, 0, 0, 0.3) 0px 30px 60px -30px, rgba(10, 37, 64, 0.35) 0px -2px 6px 0px inset;
-}
-
-
-.promotion button{
-    margin: 5%;
-    padding: 2% 5%;
-    background-color: red;
-    color: white;
-    cursor: pointer;
-    border: 2px solid red;
-    font-size: 1.4rem;
-    border-radius: 10px;
-
-}
-
-.promotion button:hover{
-    background-origin: 2px solid red;
-    background-color: rgb(255, 255, 255,0);
-    color: red;
-    font-size: 1.5rem;
+    transform: translateY(-10%);
+  }
+  to {
+    opacity: 1;
+    transform: translateY(0%);
+  }
 }
 
 

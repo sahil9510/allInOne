@@ -40,18 +40,19 @@ const CovidTracker = () => {
   };
 
   return (<>
-    {/* <MasksSharp className="mask"/> */}
+
     <div className="main">
       <Row className="row-main">
         <Col data-aos="fade-right"
       data-aos-duration="2000" className="col-md-6 heading">
           <div>
-            <h1 className="h1">
+           
               <img
                 src={flag}
                 className="flag-img"
                 alt="INDIA"
               />{'  '}
+               <h1 className="h1">
               Live Covid Tracker
             </h1>
           <h4 className="h4">As of {date}</h4>

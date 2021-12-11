@@ -1,23 +1,47 @@
-
-.main{
-    max-width: 960px;
-    margin-left: auto;
-    margin-right: auto;
-    padding-left: 15px;
-    padding-right: 15px;
-
-    
+.main {
+  max-width: 960px;
+  margin-left: auto;
+  margin-right: auto;
+  padding-left: 15px;
+  padding-right: 15px;
 }
-.heading{
-    display: flex;
-    align-items: center;
-    padding: 20px 0 15px 0;
-    font-size: 40px;
-    font-weight: 400;
+.heading {
+  display: flex;
+  align-items: center;
+  padding: 20px 0 15px 0;
+  font-size: 45px;
+  font-weight: 400;
+  color: #774936;
+}
+.notes-image {
+  width: 50px;
+  height: 50px;
+  color: #774936;
+}
+
+@media screen and (max-width: 768px) {
+  main {
+text-align: center;
+align-self: center;
+     width: 75%;
+
+  }
+  .heading {
+    font-size: 45px;
+position: relative;
+top: 30px;
+    flex-direction: row;
+  
+  margin-left: 30%;
+
+  padding-bottom: 15px;
+
+  }
+
+  .notes-image {
+    width: 50px;
+    height: 50px;
     color: #774936;
-}
-.notes-image{
-    width:45px;
-     height:45px;
-     color: #774936;
+
+  }
 }

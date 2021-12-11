@@ -22,7 +22,6 @@
   justify-content: space-between;
 }
 .add {
-  
   background-color: #c6878d;
   color: #fff;
 }
@@ -59,20 +58,31 @@
   text-align: left;
   align-self: flex-start;
   padding-left: 5%;
-  margin-top: 5%;
-  font-size: 1.5rem;
+  margin-top: 3%;
+  font-size: 1.4rem;
   color: #fff;
 }
 ::placeholder {
   font-size: 22px;
 }
-.add ::placeholder{
+.add ::placeholder {
   color: #fff;
   opacity: 0.5;
 }
-small{
+small {
   color: #fff;
 }
-.add textarea{
+.add textarea {
   color: #fff;
+}
+@media screen and (max-width: 768px) {
+  .add {
+ display: flex;
+ min-height: 200px;
+
+  }
+  .note{
+    min-height: 200px;
+  }
+
 }
