@@ -11,7 +11,7 @@ return <div id="container">
           floodColor="#000000"/>
       </filter>
     </defs>
-    <circle id="spinner" style={{fill:"transparent",stroke:"#000000",strokeWidth: "7px",strokeLinecap: "round",filter:"url(#shadow)"}} cx="50" cy="50" r="45"/>
+    <circle id="spinner" style={{fill:"transparent" ,stroke:"#774936",strokeWidth: "7px",strokeLinecap: "round",filter:"url(#shadow)"}} cx="50" cy="50" r="45"/>
 </svg>
 </div>
 }

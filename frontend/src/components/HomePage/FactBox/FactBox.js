@@ -27,7 +27,7 @@ const FactBox=({fact})=>{
     return <div data-aos="fade-right" data-aos-duration="1000" className={styles.box}>
         <h1 className={styles.date}>{date}<span><h4>{formatAMPM(new Date())}</h4></span></h1>
 
-        <h2 className={styles.factHeading}>Fact for You:</h2>
+        <h2>Fact for You:</h2>
         <p className={styles.fact}>{fact}</p>
     </div>
 }
