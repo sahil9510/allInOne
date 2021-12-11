@@ -13,7 +13,7 @@ const CardComponent = ({totalCases}) => {
             <div key={index} className="info-box">
               <Row gutter={16}>
                 {/* confirmed */}
-                <Col span={6}>
+                <Col xs={24} md={24} sm={24} lg={6} >
                   <Card className="cardInfo confirm" title="Confirmed" bordered={false}>
                     <img
                       src={confirmed}
@@ -34,7 +34,7 @@ const CardComponent = ({totalCases}) => {
                 </Col>
 
                 {/* active */}
-                <Col span={6}>
+                <Col xs={24} md={24} sm={24} lg={6}>
                   <Card className="cardInfo active" title="Active" bordered={false}>
                     <span className="imageIcons">
                       <i className="fab fa-creative-commons-sampling fa-3x" />
@@ -46,7 +46,7 @@ const CardComponent = ({totalCases}) => {
                 </Col>
 
                 {/* recovered */}
-                <Col span={6}>
+                <Col xs={24} md={24} sm={24} lg={6}>
                   <Card
                     className="cardInfo"
                     title="Recovered"
@@ -70,7 +70,7 @@ const CardComponent = ({totalCases}) => {
                 </Col>
 
                 {/* death */}
-                <Col span={6}>
+                <Col xs={24} md={24} sm={24} lg={6}>
                   <Card title="Death" bordered={false}>
                     <span style={{color: 'black'}}>
                       <i className="fas fa-peace fa-3x" />
