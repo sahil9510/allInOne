@@ -32,5 +32,11 @@
     animation-duration: 1.2s;
     animation-timing-function: cubic-bezier;
     animation-iteration-count: infinite;
-    color: #774936;
+  }
+
+
+  @media (max-width:768px){
+    #container{
+      width: 20vw;
+    }
   }

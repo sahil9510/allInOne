@@ -43,3 +43,11 @@
     border-radius: 0;
 }
 
+@media (max-width:768px){
+    .main{
+        width: 90vw;
+        height: 50vh;
+        margin-bottom: 50px;
+        margin-top: 80px;
+    }
+}

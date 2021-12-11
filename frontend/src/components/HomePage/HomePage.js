@@ -64,10 +64,10 @@ getFact();
         <CovidBox />
       </div>
       <div className={styles.row2}>
-        <NewsBox news={news[0]} />
+        <NewsBox news={news[10]} />
       </div>
       <div className={styles.row3}>
-        <NewsBox news={news[1]} />
+        <NewsBox news={news[11]} />
       </div>
     </div>
   );

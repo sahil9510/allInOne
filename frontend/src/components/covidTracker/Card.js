@@ -6,7 +6,7 @@ import './Card.css';
 
 const CardComponent = ({totalCases}) => {
   return (
-    <div data-aos="zoom-in-right" data-aos-duration="2000">
+    <div data-aos="fade-up" data-aos-duration="2000" data-aos-once="true">
       {totalCases.map((item, index) => (
         <div className="row">
           <div className="col-lg-12 colsInfo">

@@ -8,6 +8,7 @@
     border: 2px solid;
     box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
     border-radius: 2%;
+    overflow:hidden;
 }
 
 .heading{
@@ -34,4 +35,14 @@
 .twitterBox hr{
     border-bottom: none;
     height: 0;
+}
+
+
+@media (max-width:768px){
+    .twitterBox{
+        width: 80vw;
+        margin: 0 12vw;
+        height: 60vh;
+        margin-bottom: 50px;
+    }
 }

@@ -9,6 +9,7 @@ import KeepNotes from "./components/keepNotes/KeepNotes";
 import CovidTracker from "./components/covidTracker/CovidTracker";
 import QuotePage from "./components/QuotePage/QuotePage";
 import ParaphrasingPage from "./components/ParaphrasingPage/ParaphrasingPage";
+import ConverterPage from "./components/ConverterPage/ConverterPage";
 import { AuthContext } from "./context/auth-context";
 import Game from "./components/Sudoku/screens/Game/Game";
 import AOS from 'aos';
@@ -97,6 +98,9 @@ function App() {
           </Route>
           <Route path='/paraphrasing'>
             <ParaphrasingPage />
+          </Route>
+          <Route path="/converter">
+            <ConverterPage />
           </Route>
           <Route path="*">
             <Redirect to="/" />

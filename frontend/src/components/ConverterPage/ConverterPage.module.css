@@ -1,0 +1,133 @@
+.page{
+    padding: 10% 10%;
+    text-align: center;
+}
+
+.page h1{
+    font-family: 'Libre Baskerville', serif;
+    font-size: 4rem;
+    color: #774936;
+}
+.page h5{
+    color: #774936;
+}
+
+.box{
+    position: relative;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    margin: 10% 10%;
+    width: 80%;
+    height: 300px;
+    border: 2mm solid white;
+    border-radius: 10px;
+    box-shadow: rgba(0, 0, 0, 0.25) 0px 54px 55px, rgba(0, 0, 0, 0.12) 0px -12px 30px, rgba(0, 0, 0, 0.12) 0px 4px 6px, rgba(0, 0, 0, 0.17) 0px 12px 13px, rgba(0, 0, 0, 0.09) 0px -3px 5px;
+    animation: fadeUp 1s ease-out both;
+}
+
+.loader{
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 100;
+    position: absolute;
+    background: rgba(0, 0, 0, 0.3);
+    z-index: 10 !important;
+}
+
+.page p{
+    font-size: 1.2rem;
+    margin-top: 20px;
+    color: white;
+}
+.box.word{
+    background-color:#00A4EF;
+}
+
+.box.pdf{
+    background-color: rgba(255, 219, 59, 0.7);
+    animation: loading 2s both ease-out;
+    
+}
+
+.box img{
+    width: 80px;
+}
+
+.box button{
+    margin-top: 20px;
+    padding: 10px 20px;
+    font-size: 1.2rem;
+    border: none;
+    color: white;
+    border-radius: 10px;
+    border: 2px solid white;
+    cursor: pointer;
+}
+
+button.word{
+    background-color: rgba(50, 109, 220, 0.4);
+}
+
+
+button.pdf{
+    background-color: rgba(255,0,0,0.4);
+}
+
+@keyframes loading{
+    from{
+        background-color: rgba(255, 219, 59, 0.1);
+    }to{
+        background-color: rgba(255, 219, 59, 0.7);
+    }
+}
+
+button.word:hover{
+    background-color: white;
+    color: rgba(50, 109, 220, 0.8);
+}
+
+button.pdf:hover{
+    background-color: white;
+    color: rgba(255,0,0,0.8);
+
+}
+
+@keyframes fadeUp{
+    from{
+        opacity: 0;
+        transform: translateY(500px);
+    }to{
+        opacity: 1;
+        transform: translateY(0);
+    }
+}
+
+
+
+
+@media (max-width: 768px){
+    .page{
+        padding: 35% 0 10%;
+    }
+
+    .page h1{
+        font-size: 3.2rem;
+        margin-bottom: 8%;
+        color: #774936;
+    }
+
+    .page h5{
+        font-size: 1.2rem;
+        margin-bottom: 20%;
+        color: #774936;
+    }
+
+    .box{
+        width: 90%;
+        margin: 10% 5%;
+    }
+}
+

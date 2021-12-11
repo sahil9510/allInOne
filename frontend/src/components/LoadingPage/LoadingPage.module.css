@@ -9,3 +9,10 @@
 .quoteBox h4{
     color: #774936;
 }
+
+
+@media (max-width:768px){
+    .quoteBox h4{
+        font-size: 1.2rem;
+    }
+}

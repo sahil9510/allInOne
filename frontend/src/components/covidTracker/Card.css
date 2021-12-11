@@ -6,6 +6,7 @@
   font-size: 20px;
 }
 .info-box {
+  box-shadow: 0 0 20px 8px #d0d0d0;
   margin-top: 20px;
   background-color: #efe5dc;
   margin-bottom: 50px;

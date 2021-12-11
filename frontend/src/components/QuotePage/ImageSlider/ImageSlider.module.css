@@ -116,3 +116,30 @@
     z-index: 100;
     margin: 0 2px;
 }
+
+@media (max-width:768px){
+    .slider{
+        
+        margin-top: 8vh;
+    }
+
+    .image{
+        width: 90vw;
+        height: 40vh;
+    }
+
+    .prevSlide, .nextSlide{
+        display: none;
+    }
+
+    .left-arrow{
+        left: 4vw;
+    }
+    .right-arrow{
+        right: 4vw;
+    }
+
+    .points{
+        top: 1vh;
+    }
+}

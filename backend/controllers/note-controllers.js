@@ -43,11 +43,11 @@ const getNotesByUserId = async (req, res, next) => {
     return next(error);
   }
 
-  if (!userWithNotes || userWithNotes.notes.length === 0) {
-    return next(
-      new HttpError('Could not find notes for the provided user id.', 404)
-    );
-  }
+  // if (!userWithNotes || userWithNotes.notes.length === 0) {
+  //   return next(
+  //     new HttpError('Could not find notes for the provided user id.', 404)
+  //   );
+  // }
 
   res.json({
     notes: userWithNotes.notes.map((note) => note.toObject({getters: true})),

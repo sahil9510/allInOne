@@ -5,13 +5,16 @@ import {nanoid} from 'nanoid';
 import SearchBar from './SearchBar';
 import noteImage from './images/pencil.png';
 import {AuthContext} from '../../context/auth-context';
+import LoadingPage from '../LoadingPage/LoadingPage';
 
 const KeepNotes = () => {
+  const [isLoading,setIsLoading]=useState(false);
   const [notes, setNotes] = useState([]);
   const ctx = useContext(AuthContext);
 
   useEffect(() => {
     const fetchNotes = async () => {
+      setIsLoading(true);
       try {
         const responseData = await fetch(
           `http://localhost:5000/api/notes/user/${ctx.userId}`
@@ -21,9 +24,10 @@ const KeepNotes = () => {
       } catch (err) {
         console.log(err);
       }
+      setIsLoading(false);
     };
     fetchNotes();
-  });
+  },[]);
 
   const addNote = (text) => {
     const newNote = {
