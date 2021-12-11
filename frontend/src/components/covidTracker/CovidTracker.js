@@ -44,9 +44,8 @@ const CovidTracker = () => {
     <div className="main">
       <Row className="row-main">
         <Col data-aos="fade-right"
-      data-aos-duration="2000" className="col-md-6 heading">
+      data-aos-duration="2000" className="col-lg-6 heading">
           <div>
-           
               <img
                 src={flag}
                 className="flag-img"
@@ -59,7 +58,7 @@ const CovidTracker = () => {
           </div>
         </Col>
         <Col  data-aos="fade-left"
-      data-aos-duration="2000" className="col-md-6 ">
+      data-aos-duration="2000" className="col-lg-6 mapDiv">
           <Map setLoading={setLoading} />
           <div className="headline">Active Cases WorldWide </div>
         </Col>

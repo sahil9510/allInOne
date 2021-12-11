@@ -38,11 +38,26 @@ padding-top: 32px;
 }
 
 @media screen and (max-width: 768px){
-  .colsInfo{
+
+  .info-box{
+    text-align: center;
+    display: flex;
+    flex-direction: column !important;
+    width: 70vw;
+  }
+
+  /* .colsInfo{
     position: relative;
     width: 100%;
     left: 30px;
 
+  } */
+
+
+  .colsInfo{
+    text-align: center;
+    width: 90vw;
+    margin: 0 10%;
   }
 .cardInfo{
 

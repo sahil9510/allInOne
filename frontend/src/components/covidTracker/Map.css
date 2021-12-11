@@ -20,8 +20,8 @@
 @media screen and (max-width: 768px){
     .googleMap{
 position: relative;
-left: 60px;
-width: 80%;
+left: 0;
+width: 90vw;
 height: 40vh;
 margin-right: 10%;
 padding-left: 10px;
